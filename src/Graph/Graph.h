@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -35,23 +36,24 @@ class Vertex{
 private:
     int id;
     double x, y; //coordenadas
-    string type;
+    string tag;
     vector<Edge> adj;
     bool visited;
 
 public:
+    double distance(Vertex* v2);
     Vertex(int id, double x, double y);
     int getID() const;
     void setID(int id);
     double getX() const;
     double getY() const;
-    string getType() const;
+    string getTag() const;
     vector <Edge> getAdj() const;
     bool getVisited() const;
 
     void setX(double x);
     void setY(double Y);
-    void setType(string type);
+    void setTag(string tag);
     void setVisited(bool visited);
     void addEdge(const int &dest, double w);
 
@@ -74,7 +76,6 @@ public:
     vector <Vertex*> getVertexSet() const;
     bool addVertex(const int &id, const double &x, const double &y);
     bool addEdge(const int &sourc, const int &dest, double w);
-    bool addBiDirEdge(const int &sourc, const int &dest, double w);
     Vertex * findVertex(const int &id) const;
     double getMaxX();
     double getMinX();

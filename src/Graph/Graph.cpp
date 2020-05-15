@@ -29,6 +29,7 @@ Vertex::Vertex(int id, double x, double y) {
     this->x = x;
     this->y = y;
     this->id = id;
+    this->tag = "";
 }
 
 int Vertex::getID() const {return this->id;}
@@ -47,9 +48,9 @@ void Vertex::setY(double Y) {this->y = y;}
 
 void Vertex::setVisited(bool visited) {this->visited = visited;}
 
-string Vertex::getType() const {return this->type;}
+string Vertex::getTag() const {return this->tag;}
 
-void Vertex::setType(string type) {this->type = type;}
+void Vertex::setTag(string tag) {this->tag = tag;}
 
 void Vertex::addEdge(const int &dest, double w) {
     Edge ed(dest, w);
@@ -60,7 +61,12 @@ void Vertex::setID(int id) {
     this->id = id;
 }
 
-
+double Vertex::distance(Vertex *v2) {
+    double x = this->getX() - v2->getX();
+    double y = this->getY() - v2->getY();
+    double result = sqrt(pow(x,2) + pow(y,2));
+    return result;
+}
 /*
  * ================================================================================================
  * Class Graph
@@ -97,22 +103,15 @@ bool Graph::addVertex(const int &id, const double &x, const double &y) {
     return true;
 }
 
+
+
 bool Graph::addEdge(const int &sourc, const int &dest, double w) {
     auto v1 = findVertex(sourc);
     auto v2 = findVertex(dest);
+    w = v1->distance(v2);
     if (v1 == nullptr || v2 == nullptr)
         return false;
     v1->addEdge(dest,w);
-    return true;
-}
-
-bool Graph::addBiDirEdge(const int &sourc, const int &dest, double w) {
-    auto v1 = findVertex(sourc);
-    auto v2 = findVertex(dest);
-    if (v1 == nullptr || v2 == nullptr)
-        return false;
-    v1->addEdge(dest,w);
-    v2->addEdge(sourc, w);
     return true;
 }
 

@@ -5,14 +5,14 @@
 #include "../src/Graph/Graph.h"
 #include "../lib/graphviewer.h"
 
-class graphDisplay {
+class GraphDisplay {
 private:
     Graph graph;
     GraphViewer * gv;
     int height;
     int width;
 public:
-    graphDisplay(Graph &graph, int width, int height);
+    GraphDisplay(Graph &graph, int width, int height);
     void setGraph(Graph &graph);
     void show();
 };

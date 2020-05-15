@@ -2,6 +2,7 @@
 #define EXPLOREIT_UTILS_H
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 

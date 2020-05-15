@@ -1,14 +1,12 @@
 #include <cstdio>
-#include "graphviewer.h"
-#include <vector>
-#include "../src/Utils/readFileGraph.h"
-#include "src/Interface/graphDisplay.h"
+#include "src/Interface/menu.h"
 
 int main() {
-    Graph graph = readGraph("Porto");
-    graphDisplay gd(graph, 1920, 1080);
-    gd.show();
+    cout << "Hello There! Welcome to ExploreIT!" << endl << endl;
+    Sleep(1000);
+    while  (mainMenu() != 0);
 
-    getchar();
+    cout << "Thank you for using ExploreIT! Have a great tour!" << endl;
+
 	return 0;
 }
