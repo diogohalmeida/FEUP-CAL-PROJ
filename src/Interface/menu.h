@@ -9,9 +9,9 @@
 
 using namespace std;
 
-int displayMenu();
+int displayMenu(vector<Graph> regions);
 
-int mainMenu();
+int mainMenu(vector<Graph> regions);
 
 
 

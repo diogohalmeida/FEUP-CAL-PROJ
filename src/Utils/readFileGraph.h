@@ -8,6 +8,8 @@
 
 using namespace std;
 
+vector<Graph> readAllRegions();
+
 Graph readGraph(string city);
 
 void readNodes(Graph &graph, string city);

@@ -6,9 +6,10 @@
  * ================================================================================================
  */
 
-Edge::Edge(int destID, double w) {
+Edge::Edge(int destID, double w, int difficulty) {
     this->destID = destID;
     this->weight = w;
+    this->difficulty = difficulty;
 }
 
 int Edge::getDestID() const {return this->destID;}
@@ -18,6 +19,14 @@ double Edge::getWeight() const {return this->weight;}
 void Edge::setID(int id) {this->destID = id;}
 
 void Edge::setWeight(double w) {this->weight = w;}
+
+int Edge::getDifficulty() const {
+    return difficulty;
+}
+
+void Edge::setDifficulty(int difficulty) {
+    this->difficulty = difficulty;
+}
 
 
 /*
@@ -52,8 +61,8 @@ string Vertex::getTag() const {return this->tag;}
 
 void Vertex::setTag(string tag) {this->tag = tag;}
 
-void Vertex::addEdge(const int &dest, double w) {
-    Edge ed(dest, w);
+void Vertex::addEdge(const int &dest, double w, int difficulty) {
+    Edge ed(dest, w, difficulty);
     adj.push_back(ed);
 }
 
@@ -105,13 +114,13 @@ bool Graph::addVertex(const int &id, const double &x, const double &y) {
 
 
 
-bool Graph::addEdge(const int &sourc, const int &dest, double w) {
+bool Graph::addEdge(const int &sourc, const int &dest, int difficulty) {
     auto v1 = findVertex(sourc);
     auto v2 = findVertex(dest);
-    w = v1->distance(v2);
+    int w = v1->distance(v2);
     if (v1 == nullptr || v2 == nullptr)
         return false;
-    v1->addEdge(dest,w);
+    v1->addEdge(dest,w, difficulty);
     return true;
 }
 
@@ -133,4 +142,12 @@ double Graph::getMaxY() {
 
 double Graph::getMinY() {
     return this->minY;
+}
+
+string Graph::getRegion() const {
+    return this->region;
+}
+
+void Graph::setRegion(string region) {
+    this->region = region;
 }

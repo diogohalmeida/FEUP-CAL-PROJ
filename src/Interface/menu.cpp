@@ -1,7 +1,7 @@
 #include "menu.h"
 
 
-int displayMenu(){
+int displayMenu(vector<Graph> regions){
     cout << "==================== Display a Region ====================" << endl;
     cout << "Please select the desired region  to display: " << endl;
     cout << "1. Aveiro" << endl;
@@ -16,43 +16,44 @@ int displayMenu(){
     int choice;
     verifyMenuOptions(choice,0,7);
     string city;
+    Graph graph;
     switch(choice){
         case 0:
             return 0;
         case 1:
-            city = "Aveiro";
+            graph = regions.at(0);
             break;
         case 2:
-            city = "Ermesinde";
+            graph = regions.at(1);
             break;
         case 3:
-            city = "Fafe";
+            graph = regions.at(2);
             break;
         case 4:
-            city = "Gondomar";
+            graph = regions.at(3);
             break;
         case 5:
-            city = "Maia";
+            graph = regions.at(4);
             break;
         case 6:
-            city = "Porto";
+            graph = regions.at(5);
             break;
         case 7:
-            city = "Viseu";
+            graph = regions.at(6);
             break;
     }
-    Graph graph = readGraph(city);
-    GraphDisplay gd(graph, 1920, 1080);
+    GraphDisplay gd(graph, 1280, 720);
     gd.show();
-    cout << "Now showing " + city + "'s rural region..." << endl;
+    cout << "Now showing " + graph.getRegion() + "'s rural region..." << endl;
     cout << "Please close the map's window before proceeding" << endl;
     system("pause");
+    cout << endl << endl;
     return 0;
 }
 
 
 
-int mainMenu(){
+int mainMenu(vector<Graph> regions){
     cout << "==================== Main Menu ====================" << endl;
     cout << "Please select the desired option: " << endl;
     cout << "1. Display a region's map" << endl;
@@ -65,7 +66,7 @@ int mainMenu(){
         case 0:
             return 0;
         case 1:
-            while (displayMenu() != 0);
+            while (displayMenu(regions) != 0);
             return 1;
     }
     return 0;

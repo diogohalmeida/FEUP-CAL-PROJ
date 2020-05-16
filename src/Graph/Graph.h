@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 #include <cmath>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
@@ -17,13 +19,16 @@ class Edge{
 private:
     int destID;
     double weight;
+    int difficulty;
 
 public:
-    Edge(int destID, double w);
+    Edge(int destID, double w, int difficulty);
     int getDestID() const;
     double getWeight() const;
     void setID(int id);
     void setWeight(double w);
+    int getDifficulty() const;
+    void setDifficulty(int difficulty);
 };
 
 
@@ -55,7 +60,7 @@ public:
     void setY(double Y);
     void setTag(string tag);
     void setVisited(bool visited);
-    void addEdge(const int &dest, double w);
+    void addEdge(const int &dest, double w, int difficulty);
 
 };
 
@@ -67,6 +72,7 @@ public:
  */
 class Graph{
     vector <Vertex*> vertexSet;
+    string region;
     double maxX;
     double minX;
     double maxY;
@@ -75,12 +81,14 @@ class Graph{
 public:
     vector <Vertex*> getVertexSet() const;
     bool addVertex(const int &id, const double &x, const double &y);
-    bool addEdge(const int &sourc, const int &dest, double w);
+    bool addEdge(const int &sourc, const int &dest, int difficulty);
     Vertex * findVertex(const int &id) const;
     double getMaxX();
     double getMinX();
     double getMaxY();
     double getMinY();
+    string getRegion() const;
+    void setRegion(string region);
 };
 
 
