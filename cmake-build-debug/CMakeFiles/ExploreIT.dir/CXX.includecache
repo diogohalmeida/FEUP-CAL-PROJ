@@ -62,9 +62,21 @@ stdlib.h
 time.h
 -
 
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.cpp
-Worker.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
+../src/Utils/utils.h
+string
+-
+iostream
+-
+algorithm
+-
+vector
+-
+
+../src/Utils/verifications.h
+iostream
+-
+utils.h
+../src/Utils/utils.h
 
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
 ../Graph/Graph.h
@@ -84,13 +96,37 @@ stdlib.h
 time.h
 -
 
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.cpp
-GraphDisplay.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.h
-
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.h
 ../src/Graph/Graph.h
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/src/Graph/Graph.h
 ../lib/graphviewer.h
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/lib/graphviewer.h
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.cpp
+menu.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.h
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.h
+iostream
+-
+../src/Utils/verifications.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/src/Utils/verifications.h
+../Graph/Graph.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
+../Utils/readFileGraph.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.h
+GraphDisplay.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.h
+../Client/Worker.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.h
+string
+-
+fstream
+-
+utils.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/utils.h
+../Graph/Graph.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
 

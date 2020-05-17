@@ -23,3 +23,17 @@ vector<Vertex *> Worker::getTour() const {
 void Worker::setTour(vector<Vertex *> tour) {
     this->tour = tour;
 }
+
+string Worker::getName() const {
+    return this->name;
+}
+
+void Worker::setString(string name) {
+    this->name = name;
+}
+
+Worker::Worker(string name, int skill, int max_duration) {
+    this->name = name;
+    this->skill = skill;
+    this->max_duration = max_duration;
+}

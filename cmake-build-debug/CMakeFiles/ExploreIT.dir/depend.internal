@@ -14,13 +14,14 @@ CMakeFiles/ExploreIT.dir/main.cpp.obj
  ../lib/edgetype.h
  ../lib/graphviewer.h
  ../src/Graph/Graph.h
+ ../src/Utils/utils.h
  ../src/Utils/verifications.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/main.cpp
+ C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.h
- C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/utils.h
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.cpp
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
@@ -40,13 +41,14 @@ CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj
  ../lib/edgetype.h
  ../lib/graphviewer.h
  ../src/Graph/Graph.h
+ ../src/Utils/utils.h
  ../src/Utils/verifications.h
+ C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.cpp
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.h
- C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/utils.h
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.cpp
@@ -56,5 +58,6 @@ CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/utils.cpp
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/utils.h
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj
+ C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/utils.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/verifications.cpp
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/verifications.h

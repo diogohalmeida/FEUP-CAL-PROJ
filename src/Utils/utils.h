@@ -3,9 +3,22 @@
 
 #include <string>
 #include <iostream>
+#include <algorithm>
+#include <vector>
 
 using namespace std;
 
-string toLower(string str);
+void trim(string &str);
+
+bool isLetter(char a);
+
+string removeExtraSpaces(string aux);
+
+void stringFormatting(string &str);
+
+string toLower(string const& str);
+
+
+
 
 #endif //EXPLOREIT_UTILS_H

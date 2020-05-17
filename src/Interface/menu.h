@@ -6,8 +6,11 @@
 #include "../Graph/Graph.h"
 #include "../Utils/readFileGraph.h"
 #include "GraphDisplay.h"
+#include "../Client/Worker.h"
 
 using namespace std;
+
+int tourMenu(vector<Graph> regions);
 
 int displayMenu(vector<Graph> regions);
 
