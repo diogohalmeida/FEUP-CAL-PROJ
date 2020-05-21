@@ -3,38 +3,16 @@
 
 vector<Graph> readAllRegions(){
     vector<Graph> result;
-    for (int i = 0; i < 7; i++) {
-        string city;
-        switch (i) {
-            case 0:
-                city = "Aveiro";
-                break;
-            case 1:
-                city = "Ermesinde";
-                break;
-            case 2:
-                city = "Fafe";
-                break;
-            case 3:
-                city = "Gondomar";
-                break;
-            case 4:
-                city = "Maia";
-                break;
-            case 5:
-                city = "Porto";
-                break;
-            case 6:
-                city = "Viseu";
-                break;
-        }
-        Graph graph = readGraph(city);
-        result.push_back(graph);
-    }
+
+    Graph graph = readGraph("penafiel_full");
+    result.push_back(graph);
+
+    graph = readGraph("penafiel_strong");
+    result.push_back(graph);
+
+
     return result;
 }
-
-
 
 
 Graph readGraph(string city){
@@ -42,13 +20,13 @@ Graph readGraph(string city){
     graph.setRegion(city);
     readNodes(graph, city);
     readEdges(graph, city);
-    readTags(graph,city);
+    //readTags(graph,city);
     return graph;
 }
 
 void readNodes(Graph &graph, string city){
     string cityLowercase = toLower(city);
-    string fileDir = "../resources/PortugalMaps/" + city + "/nodes_x_y_" + cityLowercase + ".txt";
+    string fileDir = "../resources/Maps/Penafiel/" + city + "_nodes_xy.txt";
     ifstream nodeFile;
     nodeFile.open(fileDir);
     if (nodeFile.is_open()){
@@ -57,16 +35,8 @@ void readNodes(Graph &graph, string city){
         int numNodes = stoi(line);
         for (int i = 0; i < numNodes; i++){
             getline(nodeFile, line);
-            int id, x, y;
-            size_t pos = line.find(',');
-            id = stoi(line.substr(1, pos));
-            line.erase(0, pos + 2);
-            pos = line.find(',');
-            x = stof(line.substr(0, pos));
-            line.erase(0, pos + 2);
-            pos = line.find(')');
-            y = stof(line.substr(0, pos));
-            graph.addVertex(id, x, y);
+            vector<int> data = stringToDataVector(line);
+            graph.addVertex(data.at(0),data.at(1),data.at(2));
         }
     }
     else{
@@ -78,7 +48,7 @@ void readNodes(Graph &graph, string city){
 
 void readEdges(Graph &graph, string city){
     string cityLowercase = toLower(city);
-    string fileDir = "../resources/PortugalMaps/" + city + "/edges_" + cityLowercase + ".txt";
+    string fileDir = "../resources/Maps/Penafiel/" + city + "_edges.txt";
     ifstream edgeFile;
     edgeFile.open(fileDir);
     srand (time(NULL));
@@ -88,25 +58,21 @@ void readEdges(Graph &graph, string city){
         int numEdges = stoi(line);
         for (int i = 0; i < numEdges; i++){
             getline(edgeFile, line);
-            int node1, node2;
-            size_t pos = line.find(',');
-            node1 = stoi(line.substr(1, pos));
-            line.erase(0, pos + 2);
-            pos = line.find(')');
-            node2 = stoi(line.substr(0, pos));
+            vector<int> data = stringToDataVector(line);
             int choice = rand() % 20 + 1;
             int difficulty;
-            if (choice == 1){
+            if (choice > 19){
                 int max = 4;
                 int min = 3;
                 difficulty = rand()%(max-min+1)+min;
             }
-            else{
-                int max = 2;
-                int min = 1;
-                difficulty = rand()%(max-min+1)+min;
+            else if (choice < 5){
+                difficulty = 2;
             }
-            graph.addEdge(node1, node2, difficulty);
+            else{
+                difficulty = 1;
+            }
+            graph.addEdge(data.at(0), data.at(1), difficulty);
         }
     }
     else{

@@ -18,7 +18,7 @@ void stringFormatting(string &str);
 
 string toLower(string const& str);
 
-
+vector<int> stringToDataVector(string str);
 
 
 #endif //EXPLOREIT_UTILS_H

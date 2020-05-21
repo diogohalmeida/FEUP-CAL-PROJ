@@ -18,14 +18,16 @@ void GraphDisplay::show() {
     double yPercent, xPercent;
 
     for (Vertex* vertex: graph.getVertexSet()){
-        yPercent = 1.0 - ((vertex->getY()- graph.getMinY())/(graph.getMaxY() - graph.getMinY())*0.9 + 0.05);
+
+        yPercent = (vertex->getY()- graph.getMinY())/(graph.getMaxY() - graph.getMinY())*0.9 + 0.05;
         xPercent = (vertex->getX() - graph.getMinX())/(graph.getMaxX() - graph.getMinX())*0.9 + 0.05;
 
         if (vertex->getTag() == "restaurant" || vertex->getTag()== "cafe" || vertex->getTag() == "pub" || vertex->getTag() == "fast_food" || vertex->getTag() == "bar"){
             gv->setVertexColor(vertex->getID(),"red");
         }
         gv->addNode(vertex->getID(), (int) (xPercent * width), (int) (yPercent * height));
-        gv->setVertexLabel(vertex->getID(), vertex->getTag());
+        //gv->setVertexLabel(vertex->getID(), vertex->getTag());
+        gv->setVertexLabel(vertex->getID(), to_string(vertex->getID()));
     }
 
     int id = 0;
@@ -48,11 +50,9 @@ void GraphDisplay::show() {
                 case 5:
                     break;
             }
-            gv->addEdge(id,vertex->getID(),edge.getDestID(),0);
+            gv->addEdge(id,vertex->getID(),edge.getDestID(),EdgeType::DIRECTED);
             //gv->setEdgeLabel(id, to_string(edge.getWeight()));
             id++;
         }
     }
-
-    gv->rearrange();
 }

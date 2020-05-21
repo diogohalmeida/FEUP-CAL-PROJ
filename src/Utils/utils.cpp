@@ -56,3 +56,24 @@ string toLower(string const& str){
     return result;
 }
 
+vector<int> stringToDataVector(string str){
+    string delimiter = ",";
+    str = str.substr(1, str.size() - 2);
+    vector<string> data;
+    vector<int> result;
+    size_t pos = 0;
+    string token;
+    while ((pos = str.find(delimiter)) != std::string::npos) {
+        token = str.substr(0, pos);
+        data.push_back(token);
+        str.erase(0, pos + delimiter.length());
+    }
+    data.push_back(str);
+    for (auto & i : data) {
+        trim(i);
+        result.push_back(stoi(i));
+    }
+
+    return result;
+}
+

@@ -105,10 +105,28 @@
 		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h">
 			<Option target="ExploreIT"/>
 		</Unit>
+		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Edge.cpp">
+			<Option target="ExploreIT"/>
+		</Unit>
+		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Edge.h">
+			<Option target="ExploreIT"/>
+		</Unit>
 		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.cpp">
 			<Option target="ExploreIT"/>
 		</Unit>
 		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h">
+			<Option target="ExploreIT"/>
+		</Unit>
+		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.cpp">
+			<Option target="ExploreIT"/>
+		</Unit>
+		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.h">
+			<Option target="ExploreIT"/>
+		</Unit>
+		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Vertex.cpp">
+			<Option target="ExploreIT"/>
+		</Unit>
+		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Vertex.h">
 			<Option target="ExploreIT"/>
 		</Unit>
 		<Unit filename="C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.cpp">

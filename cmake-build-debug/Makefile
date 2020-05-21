@@ -230,6 +230,33 @@ src/Client/Worker.cpp.s:
 	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.s
 .PHONY : src/Client/Worker.cpp.s
 
+src/Graph/Edge.obj: src/Graph/Edge.cpp.obj
+
+.PHONY : src/Graph/Edge.obj
+
+# target to build an object file
+src/Graph/Edge.cpp.obj:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj
+.PHONY : src/Graph/Edge.cpp.obj
+
+src/Graph/Edge.i: src/Graph/Edge.cpp.i
+
+.PHONY : src/Graph/Edge.i
+
+# target to preprocess a source file
+src/Graph/Edge.cpp.i:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.i
+.PHONY : src/Graph/Edge.cpp.i
+
+src/Graph/Edge.s: src/Graph/Edge.cpp.s
+
+.PHONY : src/Graph/Edge.s
+
+# target to generate assembly for a file
+src/Graph/Edge.cpp.s:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.s
+.PHONY : src/Graph/Edge.cpp.s
+
 src/Graph/Graph.obj: src/Graph/Graph.cpp.obj
 
 .PHONY : src/Graph/Graph.obj
@@ -256,6 +283,60 @@ src/Graph/Graph.s: src/Graph/Graph.cpp.s
 src/Graph/Graph.cpp.s:
 	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.s
 .PHONY : src/Graph/Graph.cpp.s
+
+src/Graph/Path.obj: src/Graph/Path.cpp.obj
+
+.PHONY : src/Graph/Path.obj
+
+# target to build an object file
+src/Graph/Path.cpp.obj:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj
+.PHONY : src/Graph/Path.cpp.obj
+
+src/Graph/Path.i: src/Graph/Path.cpp.i
+
+.PHONY : src/Graph/Path.i
+
+# target to preprocess a source file
+src/Graph/Path.cpp.i:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.i
+.PHONY : src/Graph/Path.cpp.i
+
+src/Graph/Path.s: src/Graph/Path.cpp.s
+
+.PHONY : src/Graph/Path.s
+
+# target to generate assembly for a file
+src/Graph/Path.cpp.s:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.s
+.PHONY : src/Graph/Path.cpp.s
+
+src/Graph/Vertex.obj: src/Graph/Vertex.cpp.obj
+
+.PHONY : src/Graph/Vertex.obj
+
+# target to build an object file
+src/Graph/Vertex.cpp.obj:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj
+.PHONY : src/Graph/Vertex.cpp.obj
+
+src/Graph/Vertex.i: src/Graph/Vertex.cpp.i
+
+.PHONY : src/Graph/Vertex.i
+
+# target to preprocess a source file
+src/Graph/Vertex.cpp.i:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.i
+.PHONY : src/Graph/Vertex.cpp.i
+
+src/Graph/Vertex.s: src/Graph/Vertex.cpp.s
+
+.PHONY : src/Graph/Vertex.s
+
+# target to generate assembly for a file
+src/Graph/Vertex.cpp.s:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.s
+.PHONY : src/Graph/Vertex.cpp.s
 
 src/Interface/GraphDisplay.obj: src/Interface/GraphDisplay.cpp.obj
 
@@ -413,9 +494,18 @@ help:
 	@echo ... src/Client/Worker.obj
 	@echo ... src/Client/Worker.i
 	@echo ... src/Client/Worker.s
+	@echo ... src/Graph/Edge.obj
+	@echo ... src/Graph/Edge.i
+	@echo ... src/Graph/Edge.s
 	@echo ... src/Graph/Graph.obj
 	@echo ... src/Graph/Graph.i
 	@echo ... src/Graph/Graph.s
+	@echo ... src/Graph/Path.obj
+	@echo ... src/Graph/Path.i
+	@echo ... src/Graph/Path.s
+	@echo ... src/Graph/Vertex.obj
+	@echo ... src/Graph/Vertex.i
+	@echo ... src/Graph/Vertex.s
 	@echo ... src/Interface/GraphDisplay.obj
 	@echo ... src/Interface/GraphDisplay.i
 	@echo ... src/Interface/GraphDisplay.s

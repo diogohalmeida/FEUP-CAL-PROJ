@@ -55,12 +55,12 @@ string
 -
 vector
 -
-cmath
+cstdlib
 -
-stdlib.h
+ctime
 -
-time.h
--
+Path.h
+../src/Graph/Path.h
 
 ../src/Utils/utils.h
 string
@@ -82,6 +82,8 @@ C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
 ../Graph/Graph.h
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
 
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Edge.h
+
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
 iostream
 -
@@ -89,12 +91,28 @@ string
 -
 vector
 -
+cstdlib
+-
+ctime
+-
+Path.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.h
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.h
+Vertex.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Vertex.h
+graphviewer.h
+-
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Vertex.h
+string
+-
+vector
+-
 cmath
 -
-stdlib.h
--
-time.h
--
+Edge.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Edge.h
 
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.h
 ../src/Graph/Graph.h
