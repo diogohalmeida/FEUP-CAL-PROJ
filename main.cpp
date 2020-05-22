@@ -9,6 +9,7 @@ int main() {
     vector<Graph<coordinates>> regions = readAllRegions();
     Graph<coordinates> region = regions.at(1);
 
+
     while (mainMenu(regions) != 0);
 
     /*
