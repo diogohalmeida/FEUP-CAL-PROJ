@@ -17,55 +17,29 @@ CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/utils.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/verifications.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Client/Worker.h
-CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Graph/Edge.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Graph/Graph.h
+CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Graph/MutablePriorityQueue.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Graph/Path.h
-CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Graph/Vertex.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Interface/GraphDisplay.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Interface/menu.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/readFileGraph.h
+CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/tourHandling.h
 
-CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../lib/connection.h
-CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../lib/edgetype.h
-CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../lib/graphviewer.h
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Client/Worker.cpp
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Client/Worker.h
-CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Graph/Edge.h
-CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Graph/Graph.h
-CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Graph/Path.h
-CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Graph/Vertex.h
-
-CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj: ../src/Graph/Edge.cpp
-CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj: ../src/Graph/Edge.h
-
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../lib/connection.h
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../lib/edgetype.h
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../lib/graphviewer.h
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../src/Graph/Edge.h
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../src/Graph/Graph.cpp
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../src/Graph/Graph.h
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../src/Graph/Path.h
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../src/Graph/Vertex.h
 
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../lib/connection.h
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../lib/edgetype.h
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../lib/graphviewer.h
-CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../src/Graph/Edge.h
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../src/Graph/Path.cpp
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../src/Graph/Path.h
-CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../src/Graph/Vertex.h
-
-CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj: ../src/Graph/Edge.h
-CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj: ../src/Graph/Vertex.cpp
-CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj: ../src/Graph/Vertex.h
 
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../lib/connection.h
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../lib/edgetype.h
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../lib/graphviewer.h
-CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Graph/Edge.h
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Graph/Graph.h
+CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Graph/MutablePriorityQueue.h
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Graph/Path.h
-CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Graph/Vertex.h
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Interface/GraphDisplay.cpp
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Interface/GraphDisplay.h
 
@@ -76,25 +50,34 @@ CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Graph/Graph.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Utils/utils.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Utils/verifications.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Client/Worker.h
-CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Graph/Edge.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Graph/Graph.h
+CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Graph/MutablePriorityQueue.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Graph/Path.h
-CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Graph/Vertex.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Interface/GraphDisplay.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Interface/menu.cpp
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Interface/menu.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Utils/readFileGraph.h
+CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Utils/tourHandling.h
 
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../lib/connection.h
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../lib/edgetype.h
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../lib/graphviewer.h
-CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Graph/Edge.h
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Graph/Graph.h
+CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Graph/MutablePriorityQueue.h
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Graph/Path.h
-CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Graph/Vertex.h
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Utils/readFileGraph.cpp
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Utils/readFileGraph.h
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Utils/utils.h
+
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../lib/connection.h
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../lib/edgetype.h
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../lib/graphviewer.h
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../src/Client/Worker.h
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../src/Graph/Graph.h
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../src/Graph/MutablePriorityQueue.h
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../src/Graph/Path.h
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../src/Utils/tourHandling.cpp
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../src/Utils/tourHandling.h
 
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj: ../src/Utils/utils.cpp
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj: ../src/Utils/utils.h

@@ -1,7 +1,7 @@
 #include "menu.h"
 
 
-int tourMenu(vector<Graph> regions){
+int tourMenu(vector<Graph<coordinates>> regions){
     int size;
     cout << endl << "==================== Plan a Tour ====================" << endl;
     cout << "Please insert the size of the tour group (0 to go back to the Main Menu): ";
@@ -9,6 +9,7 @@ int tourMenu(vector<Graph> regions){
     if (size == 0){
         return 0;
     }
+    vector<Worker> workers;
     int duration;
     cout << endl << "Tour's duration: Please keep in mind all tours start at 9:00 and can last up to 10 hours (with a 5 hour minimum duration)";
     cout << endl << "Please insert the tour's duration (in hours): ";
@@ -25,22 +26,16 @@ int tourMenu(vector<Graph> regions){
         cout << "Tour Skill (1 to 4): ";
         verifyMenuOptions(skill, 1,4);
         Worker toAdd(name, skill, duration*60);
+        workers.push_back(toAdd);
     }
 
-    int max = regions.at(1).getVertexSet().size();
-    int min = 1;
-    int source = rand()%(max-min+1)+min;
-    int dest = rand()%(max-min+1)+min;
-
-    //cout << endl << source << " ---> " << dest << endl;
-    vector<Path> paths = regions.at(1).getAllPaths(5054, 611);
-    paths.at(0).display();
+    tourGenerator(regions.at(1), workers);
     return 0;
 }
 
 
 
-int displayMenu(vector<Graph> regions){
+int displayMenu(vector<Graph<coordinates>> regions){
     cout << endl << "==================== Display Region ====================" << endl;
     cout << "Please select the desired section to display: " << endl;
     cout << "1. Penafiel - Full Region" << endl;
@@ -51,7 +46,7 @@ int displayMenu(vector<Graph> regions){
     cout << "Choose an option from the menu (integer number): ";
     verifyMenuOptions(choice,0,2);
     string city;
-    Graph graph;
+    Graph<coordinates> graph;
     switch(choice){
         case 0:
             return 0;
@@ -65,15 +60,13 @@ int displayMenu(vector<Graph> regions){
     GraphDisplay gd(graph, 1280, 720);
     gd.show();
     cout << "Now showing the selected section of the region..." << endl;
-    cout << "Please close the map's window before proceeding" << endl;
-    system("pause");
     cout << endl << endl;
     return 0;
 }
 
 
 
-int mainMenu(vector<Graph> regions){
+int mainMenu(vector<Graph<coordinates>> regions){
     cout << "==================== Main Menu ====================" << endl;
     cout << "Please select the desired option: " << endl;
     cout << "1. Display the region's map" << endl;

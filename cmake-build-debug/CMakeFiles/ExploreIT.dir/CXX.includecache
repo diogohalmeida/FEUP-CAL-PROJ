@@ -48,95 +48,41 @@ edgetype.h
 connection.h
 ../lib/connection.h
 
-../src/Graph/Graph.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
 iostream
--
-string
 -
 vector
--
-cstdlib
--
-ctime
--
-Path.h
-../src/Graph/Path.h
-
-../src/Utils/utils.h
-string
--
-iostream
 -
 algorithm
 -
-vector
+queue
 -
-
-../src/Utils/verifications.h
-iostream
--
-utils.h
-../src/Utils/utils.h
-
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
-../Graph/Graph.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
-
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Edge.h
-
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
-iostream
--
-string
--
-vector
--
-cstdlib
--
-ctime
--
-Path.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.h
-
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.h
-Vertex.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Vertex.h
-graphviewer.h
--
-
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Vertex.h
-string
--
-vector
+limits
 -
 cmath
 -
-Edge.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Edge.h
-
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.h
-../src/Graph/Graph.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/src/Graph/Graph.h
-../lib/graphviewer.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/lib/graphviewer.h
-
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.cpp
-menu.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.h
-
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/menu.h
-iostream
+functional
 -
-../src/Utils/verifications.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/src/Utils/verifications.h
-../Graph/Graph.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
-../Utils/readFileGraph.h
+unordered_map
+-
+Path.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.h
+MutablePriorityQueue.h
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/MutablePriorityQueue.h
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/MutablePriorityQueue.h
+vector
+-
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.h
+vector
+-
+graphviewer.h
+-
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.cpp
+readFileGraph.h
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.h
-GraphDisplay.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Interface/GraphDisplay.h
-../Client/Worker.h
-C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
 
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.h
 string
@@ -147,4 +93,14 @@ utils.h
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/utils.h
 ../Graph/Graph.h
 C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Graph.h
+
+C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/utils.h
+string
+-
+iostream
+-
+algorithm
+-
+vector
+-
 

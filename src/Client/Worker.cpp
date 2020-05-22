@@ -16,14 +16,6 @@ void Worker::setMaxDuration(int max_duration) {
     this->max_duration = max_duration;
 }
 
-vector<Vertex *> Worker::getTour() const {
-    return this->tour;
-}
-
-void Worker::setTour(vector<Vertex *> tour) {
-    this->tour = tour;
-}
-
 string Worker::getName() const {
     return this->name;
 }

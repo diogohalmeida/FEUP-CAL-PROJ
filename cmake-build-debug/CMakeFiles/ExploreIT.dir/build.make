@@ -112,24 +112,10 @@ CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.s"
 	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\readFileGraph.cpp" -o CMakeFiles\ExploreIT.dir\src\Utils\readFileGraph.cpp.s
 
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj: ../src/Graph/Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Graph\Graph.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Graph.cpp"
-
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.i"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Graph.cpp" > CMakeFiles\ExploreIT.dir\src\Graph\Graph.cpp.i
-
-CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.s"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Graph.cpp" -o CMakeFiles\ExploreIT.dir\src\Graph\Graph.cpp.s
-
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj: ../src/Utils/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj"
 	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\utils.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\utils.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.i: cmake_force
@@ -143,7 +129,7 @@ CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.s: cmake_force
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Interface/menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj"
 	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Interface\menu.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Interface\menu.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.i: cmake_force
@@ -157,7 +143,7 @@ CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.s: cmake_force
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Interface/GraphDisplay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj"
 	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Interface\GraphDisplay.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Interface\GraphDisplay.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.i: cmake_force
@@ -171,7 +157,7 @@ CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.s: cmake_force
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj: ../src/Utils/verifications.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj"
 	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\verifications.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\verifications.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.i: cmake_force
@@ -185,7 +171,7 @@ CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.s: cmake_force
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Client/Worker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj"
 	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Client\Worker.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Client\Worker.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.i: cmake_force
@@ -199,7 +185,7 @@ CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.s: cmake_force
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../src/Graph/Path.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj"
 	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Graph\Path.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Path.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.i: cmake_force
@@ -210,33 +196,19 @@ CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.s"
 	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Path.cpp" -o CMakeFiles\ExploreIT.dir\src\Graph\Path.cpp.s
 
-CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
-CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
-CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj: ../src/Graph/Vertex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Graph\Vertex.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Vertex.cpp"
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../src/Utils/tourHandling.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp"
 
-CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.i"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Vertex.cpp" > CMakeFiles\ExploreIT.dir\src\Graph\Vertex.cpp.i
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.i"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp" > CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.i
 
-CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.s"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Vertex.cpp" -o CMakeFiles\ExploreIT.dir\src\Graph\Vertex.cpp.s
-
-CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
-CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
-CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj: ../src/Graph/Edge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Graph\Edge.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Edge.cpp"
-
-CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.i"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Edge.cpp" > CMakeFiles\ExploreIT.dir\src\Graph\Edge.cpp.i
-
-CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.s"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Edge.cpp" -o CMakeFiles\ExploreIT.dir\src\Graph\Edge.cpp.s
+CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.s"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp" -o CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.s
 
 # Object files for target ExploreIT
 ExploreIT_OBJECTS = \
@@ -244,15 +216,13 @@ ExploreIT_OBJECTS = \
 "CMakeFiles/ExploreIT.dir/lib/connection.cpp.obj" \
 "CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.obj" \
 "CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj" \
-"CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj" \
 "CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj" \
 "CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj" \
 "CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj" \
 "CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj" \
 "CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj" \
 "CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj" \
-"CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj" \
-"CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj"
+"CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj"
 
 # External object files for target ExploreIT
 ExploreIT_EXTERNAL_OBJECTS =
@@ -261,20 +231,18 @@ ExploreIT.exe: CMakeFiles/ExploreIT.dir/main.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/lib/connection.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj
-ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj
-ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj
-ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj
+ExploreIT.exe: CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/build.make
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/linklibs.rsp
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/objects1.rsp
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ExploreIT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ExploreIT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ExploreIT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

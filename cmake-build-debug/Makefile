@@ -230,60 +230,6 @@ src/Client/Worker.cpp.s:
 	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.s
 .PHONY : src/Client/Worker.cpp.s
 
-src/Graph/Edge.obj: src/Graph/Edge.cpp.obj
-
-.PHONY : src/Graph/Edge.obj
-
-# target to build an object file
-src/Graph/Edge.cpp.obj:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.obj
-.PHONY : src/Graph/Edge.cpp.obj
-
-src/Graph/Edge.i: src/Graph/Edge.cpp.i
-
-.PHONY : src/Graph/Edge.i
-
-# target to preprocess a source file
-src/Graph/Edge.cpp.i:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.i
-.PHONY : src/Graph/Edge.cpp.i
-
-src/Graph/Edge.s: src/Graph/Edge.cpp.s
-
-.PHONY : src/Graph/Edge.s
-
-# target to generate assembly for a file
-src/Graph/Edge.cpp.s:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Edge.cpp.s
-.PHONY : src/Graph/Edge.cpp.s
-
-src/Graph/Graph.obj: src/Graph/Graph.cpp.obj
-
-.PHONY : src/Graph/Graph.obj
-
-# target to build an object file
-src/Graph/Graph.cpp.obj:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.obj
-.PHONY : src/Graph/Graph.cpp.obj
-
-src/Graph/Graph.i: src/Graph/Graph.cpp.i
-
-.PHONY : src/Graph/Graph.i
-
-# target to preprocess a source file
-src/Graph/Graph.cpp.i:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.i
-.PHONY : src/Graph/Graph.cpp.i
-
-src/Graph/Graph.s: src/Graph/Graph.cpp.s
-
-.PHONY : src/Graph/Graph.s
-
-# target to generate assembly for a file
-src/Graph/Graph.cpp.s:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Graph.cpp.s
-.PHONY : src/Graph/Graph.cpp.s
-
 src/Graph/Path.obj: src/Graph/Path.cpp.obj
 
 .PHONY : src/Graph/Path.obj
@@ -310,33 +256,6 @@ src/Graph/Path.s: src/Graph/Path.cpp.s
 src/Graph/Path.cpp.s:
 	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.s
 .PHONY : src/Graph/Path.cpp.s
-
-src/Graph/Vertex.obj: src/Graph/Vertex.cpp.obj
-
-.PHONY : src/Graph/Vertex.obj
-
-# target to build an object file
-src/Graph/Vertex.cpp.obj:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.obj
-.PHONY : src/Graph/Vertex.cpp.obj
-
-src/Graph/Vertex.i: src/Graph/Vertex.cpp.i
-
-.PHONY : src/Graph/Vertex.i
-
-# target to preprocess a source file
-src/Graph/Vertex.cpp.i:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.i
-.PHONY : src/Graph/Vertex.cpp.i
-
-src/Graph/Vertex.s: src/Graph/Vertex.cpp.s
-
-.PHONY : src/Graph/Vertex.s
-
-# target to generate assembly for a file
-src/Graph/Vertex.cpp.s:
-	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Graph/Vertex.cpp.s
-.PHONY : src/Graph/Vertex.cpp.s
 
 src/Interface/GraphDisplay.obj: src/Interface/GraphDisplay.cpp.obj
 
@@ -419,6 +338,33 @@ src/Utils/readFileGraph.cpp.s:
 	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.s
 .PHONY : src/Utils/readFileGraph.cpp.s
 
+src/Utils/tourHandling.obj: src/Utils/tourHandling.cpp.obj
+
+.PHONY : src/Utils/tourHandling.obj
+
+# target to build an object file
+src/Utils/tourHandling.cpp.obj:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj
+.PHONY : src/Utils/tourHandling.cpp.obj
+
+src/Utils/tourHandling.i: src/Utils/tourHandling.cpp.i
+
+.PHONY : src/Utils/tourHandling.i
+
+# target to preprocess a source file
+src/Utils/tourHandling.cpp.i:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.i
+.PHONY : src/Utils/tourHandling.cpp.i
+
+src/Utils/tourHandling.s: src/Utils/tourHandling.cpp.s
+
+.PHONY : src/Utils/tourHandling.s
+
+# target to generate assembly for a file
+src/Utils/tourHandling.cpp.s:
+	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.s
+.PHONY : src/Utils/tourHandling.cpp.s
+
 src/Utils/utils.obj: src/Utils/utils.cpp.obj
 
 .PHONY : src/Utils/utils.obj
@@ -494,18 +440,9 @@ help:
 	@echo ... src/Client/Worker.obj
 	@echo ... src/Client/Worker.i
 	@echo ... src/Client/Worker.s
-	@echo ... src/Graph/Edge.obj
-	@echo ... src/Graph/Edge.i
-	@echo ... src/Graph/Edge.s
-	@echo ... src/Graph/Graph.obj
-	@echo ... src/Graph/Graph.i
-	@echo ... src/Graph/Graph.s
 	@echo ... src/Graph/Path.obj
 	@echo ... src/Graph/Path.i
 	@echo ... src/Graph/Path.s
-	@echo ... src/Graph/Vertex.obj
-	@echo ... src/Graph/Vertex.i
-	@echo ... src/Graph/Vertex.s
 	@echo ... src/Interface/GraphDisplay.obj
 	@echo ... src/Interface/GraphDisplay.i
 	@echo ... src/Interface/GraphDisplay.s
@@ -515,6 +452,9 @@ help:
 	@echo ... src/Utils/readFileGraph.obj
 	@echo ... src/Utils/readFileGraph.i
 	@echo ... src/Utils/readFileGraph.s
+	@echo ... src/Utils/tourHandling.obj
+	@echo ... src/Utils/tourHandling.i
+	@echo ... src/Utils/tourHandling.s
 	@echo ... src/Utils/utils.obj
 	@echo ... src/Utils/utils.i
 	@echo ... src/Utils/utils.s

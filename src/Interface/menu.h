@@ -5,16 +5,15 @@
 #include "../src/Utils/verifications.h"
 #include "../Graph/Graph.h"
 #include "../Utils/readFileGraph.h"
+#include "../Utils/tourHandling.h"
 #include "GraphDisplay.h"
 #include "../Client/Worker.h"
 
-using namespace std;
+int tourMenu(vector<Graph<coordinates>> regions);
 
-int tourMenu(vector<Graph> regions);
+int displayMenu(vector<Graph<coordinates>> regions);
 
-int displayMenu(vector<Graph> regions);
-
-int mainMenu(vector<Graph> regions);
+int mainMenu(vector<Graph<coordinates>> regions);
 
 
 

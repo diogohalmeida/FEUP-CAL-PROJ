@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 # Comment the line below if you are under Linux or Mac OS
 link_libraries(ws2_32 wsock32)
 
+
 include_directories(lib)
 include_directories(resources)
-add_executable(ExploreIT main.cpp lib/connection.cpp lib/graphviewer.cpp src/Utils/readFileGraph.cpp src/Utils/readFileGraph.h src/Graph/Graph.h src/Graph/Graph.cpp src/Utils/utils.cpp src/Utils/utils.h src/Interface/menu.cpp src/Interface/menu.h src/Interface/GraphDisplay.cpp src/Interface/GraphDisplay.h src/Utils/verifications.cpp src/Utils/verifications.h src/Client/Worker.cpp src/Client/Worker.h src/Graph/Path.cpp src/Graph/Path.h src/Graph/Vertex.cpp src/Graph/Vertex.h src/Graph/Edge.cpp src/Graph/Edge.h)
+add_executable(ExploreIT main.cpp lib/connection.cpp lib/graphviewer.cpp src/Utils/readFileGraph.cpp src/Utils/readFileGraph.h src/Graph/Graph.h src/Utils/utils.cpp src/Utils/utils.h src/Interface/menu.cpp src/Interface/menu.h src/Interface/GraphDisplay.cpp src/Interface/GraphDisplay.h src/Utils/verifications.cpp src/Utils/verifications.h src/Client/Worker.cpp src/Client/Worker.h src/Graph/Path.cpp src/Graph/Path.h src/Utils/tourHandling.cpp src/Utils/tourHandling.h)

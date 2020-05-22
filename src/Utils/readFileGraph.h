@@ -6,17 +6,15 @@
 #include "utils.h"
 #include "../Graph/Graph.h"
 
-using namespace std;
+vector<Graph<coordinates>> readAllRegions();
 
-vector<Graph> readAllRegions();
+Graph<coordinates> readGraph(string city);
 
-Graph readGraph(string city);
+void readNodes(Graph<coordinates> &graph, string city);
 
-void readNodes(Graph &graph, string city);
+void readEdges(Graph<coordinates> &graph, string city);
 
-void readEdges(Graph &graph, string city);
-
-void readTags(Graph &graph, string city);
+void readTags(Graph<coordinates> &graph, string city);
 
 
 #endif //EXPLOREIT_READFILEGRAPH_H

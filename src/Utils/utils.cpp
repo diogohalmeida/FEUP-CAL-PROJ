@@ -76,4 +76,3 @@ vector<int> stringToDataVector(string str){
 
     return result;
 }
-

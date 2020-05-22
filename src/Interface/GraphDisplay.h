@@ -7,14 +7,15 @@
 
 class GraphDisplay {
 private:
-    Graph graph;
+    Graph<coordinates> graph;
     GraphViewer * gv;
     int height;
     int width;
 public:
-    GraphDisplay(Graph &graph, int width, int height);
-    void setGraph(Graph &graph);
+    GraphDisplay(Graph<coordinates> &graph, int width, int height);
+    void setGraph(Graph<coordinates> &graph);
     void show();
+    void close();
 };
 
 

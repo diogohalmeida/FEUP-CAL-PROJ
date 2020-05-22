@@ -1,10 +1,10 @@
 #include "readFileGraph.h"
 
 
-vector<Graph> readAllRegions(){
-    vector<Graph> result;
+vector<Graph<coordinates>> readAllRegions(){
+    vector<Graph<coordinates>> result;
 
-    Graph graph = readGraph("penafiel_full");
+    Graph<coordinates> graph = readGraph("penafiel_full");
     result.push_back(graph);
 
     graph = readGraph("penafiel_strong");
@@ -15,16 +15,15 @@ vector<Graph> readAllRegions(){
 }
 
 
-Graph readGraph(string city){
-    Graph graph;
-    graph.setRegion(city);
+Graph<coordinates> readGraph(string city){
+    Graph<coordinates> graph;
     readNodes(graph, city);
     readEdges(graph, city);
     //readTags(graph,city);
     return graph;
 }
 
-void readNodes(Graph &graph, string city){
+void readNodes(Graph<coordinates> &graph, string city){
     string cityLowercase = toLower(city);
     string fileDir = "../resources/Maps/Penafiel/" + city + "_nodes_xy.txt";
     ifstream nodeFile;
@@ -36,7 +35,15 @@ void readNodes(Graph &graph, string city){
         for (int i = 0; i < numNodes; i++){
             getline(nodeFile, line);
             vector<int> data = stringToDataVector(line);
-            graph.addVertex(data.at(0),data.at(1),data.at(2));
+            int choice = rand() % 8 + 1;
+            string tag;
+            if (choice == 5){
+                tag = "meeting_point";
+            }
+            else
+                tag = "";
+            graph.addVertex(data.at(0),make_pair(data.at(1), data.at(2)), tag);
+
         }
     }
     else{
@@ -46,12 +53,11 @@ void readNodes(Graph &graph, string city){
 
 }
 
-void readEdges(Graph &graph, string city){
+void readEdges(Graph<coordinates> &graph, string city){
     string cityLowercase = toLower(city);
     string fileDir = "../resources/Maps/Penafiel/" + city + "_edges.txt";
     ifstream edgeFile;
     edgeFile.open(fileDir);
-    srand (time(NULL));
     if (edgeFile.is_open()){
         string line;
         getline(edgeFile, line);
@@ -59,9 +65,9 @@ void readEdges(Graph &graph, string city){
         for (int i = 0; i < numEdges; i++){
             getline(edgeFile, line);
             vector<int> data = stringToDataVector(line);
-            int choice = rand() % 20 + 1;
+            int choice = rand() % 50 + 1;
             int difficulty;
-            if (choice > 19){
+            if (choice > 49){
                 int max = 4;
                 int min = 3;
                 difficulty = rand()%(max-min+1)+min;
@@ -72,7 +78,7 @@ void readEdges(Graph &graph, string city){
             else{
                 difficulty = 1;
             }
-            graph.addEdge(data.at(0), data.at(1), difficulty);
+            graph.addBiDirEdge(data.at(0), data.at(1), difficulty);
         }
     }
     else{
@@ -82,7 +88,7 @@ void readEdges(Graph &graph, string city){
 }
 
 
-void readTags(Graph &graph, string city){
+void readTags(Graph<coordinates> &graph, string city){
     //Tags 1
     string cityLowercase = toLower(city);
     string fileDir1 = "../resources/TagExamples/" + city + "/t03_tags_" + cityLowercase + ".txt";
@@ -100,7 +106,7 @@ void readTags(Graph &graph, string city){
             int numNodes = stoi(line);
             for (int j = 0; j < numNodes; j++){
                 getline(tagFile1, line);
-                Vertex* v = graph.findVertex(stoi(line));
+                Vertex<coordinates>* v = graph.findVertex(stoi(line));
                 v->setTag(tag);
             }
         }
@@ -125,7 +131,7 @@ void readTags(Graph &graph, string city){
             int numNodes = stoi(line);
             for (int j = 0; j < numNodes; j++){
                 getline(tagFile2, line);
-                Vertex* v = graph.findVertex(stoi(line));
+                Vertex<coordinates>* v = graph.findVertex(stoi(line));
                 v->setTag(tag);
             }
         }
