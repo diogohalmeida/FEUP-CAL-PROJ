@@ -9,7 +9,7 @@ class Worker {
 private:
     string name;
     int skill;
-    int max_duration;       //in minutes
+    int max_duration;       //in hours
 public:
     Worker(string name, int skill, int max_duration);
     string getName() const;

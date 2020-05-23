@@ -11,9 +11,9 @@ int tourMenu(vector<Graph<coordinates>> regions){
     }
     vector<Worker> workers;
     int duration;
-    cout << endl << "Tour's duration: Please keep in mind all tours start at 9:00 and can last up to 10 hours (with a 5 hour minimum duration)";
+    cout << endl << "Tour's duration: Please keep in mind all tours start at 9:00 and can last up to 10 hours (with a 6 hour minimum duration)";
     cout << endl << "Please insert the tour's duration (in hours): ";
-    verifyMenuOptions(duration, 5, 10);
+    verifyMenuOptions(duration, 6, 10);
     cout << endl << "Now, insert the information about each member of the group: " << endl;
     for (int i = 1; i <= size; i++){
         string name;
@@ -24,12 +24,18 @@ int tourMenu(vector<Graph<coordinates>> regions){
         cin >> name;
         verifyAllLetters(name);
         cout << "Tour Skill (1 to 4): ";
-        verifyMenuOptions(skill, 1,4);
-        Worker toAdd(name, skill, duration*60);
+
+        Worker toAdd(name, skill, duration);
         workers.push_back(toAdd);
     }
 
-    tourGenerator(regions.at(1), workers);
+    vector<Path> paths = tourGenerator(regions.at(1), workers);
+    int lol;
+    for (int i = 0; i < paths.size(); i++){
+        GraphDisplay gd(regions.at(1), 1280, 720);
+        cout << paths.at(i).getDistance() << endl;
+        gd.showPath(paths.at(paths.size()-1-i));
+    }
     return 0;
 }
 

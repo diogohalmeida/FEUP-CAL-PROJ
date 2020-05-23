@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "F:\Clion\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "F:\Clion\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\CAL\proj\FEUP-CAL-PROJ
+CMAKE_SOURCE_DIR = "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ExploreIT.dir/depend.make
@@ -59,156 +59,156 @@ include CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/main.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/main.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ExploreIT.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\main.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ExploreIT.dir/main.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\main.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\main.cpp"
 
 CMakeFiles/ExploreIT.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\main.cpp > CMakeFiles\ExploreIT.dir\main.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\main.cpp" > CMakeFiles\ExploreIT.dir\main.cpp.i
 
 CMakeFiles/ExploreIT.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\main.cpp -o CMakeFiles\ExploreIT.dir\main.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\main.cpp" -o CMakeFiles\ExploreIT.dir\main.cpp.s
 
 CMakeFiles/ExploreIT.dir/lib/connection.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/lib/connection.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/lib/connection.cpp.obj: ../lib/connection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ExploreIT.dir/lib/connection.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\lib\connection.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\lib\connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ExploreIT.dir/lib/connection.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\lib\connection.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\lib\connection.cpp"
 
 CMakeFiles/ExploreIT.dir/lib/connection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/lib/connection.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\lib\connection.cpp > CMakeFiles\ExploreIT.dir\lib\connection.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\lib\connection.cpp" > CMakeFiles\ExploreIT.dir\lib\connection.cpp.i
 
 CMakeFiles/ExploreIT.dir/lib/connection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/lib/connection.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\lib\connection.cpp -o CMakeFiles\ExploreIT.dir\lib\connection.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\lib\connection.cpp" -o CMakeFiles\ExploreIT.dir\lib\connection.cpp.s
 
 CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.obj: ../lib/graphviewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\lib\graphviewer.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\lib\graphviewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\lib\graphviewer.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\lib\graphviewer.cpp"
 
 CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\lib\graphviewer.cpp > CMakeFiles\ExploreIT.dir\lib\graphviewer.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\lib\graphviewer.cpp" > CMakeFiles\ExploreIT.dir\lib\graphviewer.cpp.i
 
 CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/lib/graphviewer.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\lib\graphviewer.cpp -o CMakeFiles\ExploreIT.dir\lib\graphviewer.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\lib\graphviewer.cpp" -o CMakeFiles\ExploreIT.dir\lib\graphviewer.cpp.s
 
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj: ../src/Utils/readFileGraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\readFileGraph.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\readFileGraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\readFileGraph.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\readFileGraph.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\readFileGraph.cpp > CMakeFiles\ExploreIT.dir\src\Utils\readFileGraph.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\readFileGraph.cpp" > CMakeFiles\ExploreIT.dir\src\Utils\readFileGraph.cpp.i
 
 CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Utils/readFileGraph.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\readFileGraph.cpp -o CMakeFiles\ExploreIT.dir\src\Utils\readFileGraph.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\readFileGraph.cpp" -o CMakeFiles\ExploreIT.dir\src\Utils\readFileGraph.cpp.s
 
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj: ../src/Utils/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\utils.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\utils.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\utils.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\utils.cpp > CMakeFiles\ExploreIT.dir\src\Utils\utils.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\utils.cpp" > CMakeFiles\ExploreIT.dir\src\Utils\utils.cpp.i
 
 CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Utils/utils.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\utils.cpp -o CMakeFiles\ExploreIT.dir\src\Utils\utils.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\utils.cpp" -o CMakeFiles\ExploreIT.dir\src\Utils\utils.cpp.s
 
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Interface/menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Interface\menu.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\src\Interface\menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Interface\menu.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Interface\menu.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\src\Interface\menu.cpp > CMakeFiles\ExploreIT.dir\src\Interface\menu.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Interface\menu.cpp" > CMakeFiles\ExploreIT.dir\src\Interface\menu.cpp.i
 
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\src\Interface\menu.cpp -o CMakeFiles\ExploreIT.dir\src\Interface\menu.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Interface\menu.cpp" -o CMakeFiles\ExploreIT.dir\src\Interface\menu.cpp.s
 
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj: ../src/Interface/GraphDisplay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Interface\GraphDisplay.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\src\Interface\GraphDisplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Interface\GraphDisplay.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Interface\GraphDisplay.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\src\Interface\GraphDisplay.cpp > CMakeFiles\ExploreIT.dir\src\Interface\GraphDisplay.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Interface\GraphDisplay.cpp" > CMakeFiles\ExploreIT.dir\src\Interface\GraphDisplay.cpp.i
 
 CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Interface/GraphDisplay.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\src\Interface\GraphDisplay.cpp -o CMakeFiles\ExploreIT.dir\src\Interface\GraphDisplay.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Interface\GraphDisplay.cpp" -o CMakeFiles\ExploreIT.dir\src\Interface\GraphDisplay.cpp.s
 
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj: ../src/Utils/verifications.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\verifications.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\verifications.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\verifications.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\verifications.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\verifications.cpp > CMakeFiles\ExploreIT.dir\src\Utils\verifications.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\verifications.cpp" > CMakeFiles\ExploreIT.dir\src\Utils\verifications.cpp.i
 
 CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Utils/verifications.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\verifications.cpp -o CMakeFiles\ExploreIT.dir\src\Utils\verifications.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\verifications.cpp" -o CMakeFiles\ExploreIT.dir\src\Utils\verifications.cpp.s
 
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Client/Worker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Client\Worker.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\src\Client\Worker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Client\Worker.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Client\Worker.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\src\Client\Worker.cpp > CMakeFiles\ExploreIT.dir\src\Client\Worker.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Client\Worker.cpp" > CMakeFiles\ExploreIT.dir\src\Client\Worker.cpp.i
 
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\src\Client\Worker.cpp -o CMakeFiles\ExploreIT.dir\src\Client\Worker.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Client\Worker.cpp" -o CMakeFiles\ExploreIT.dir\src\Client\Worker.cpp.s
 
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../src/Graph/Path.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Graph\Path.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\src\Graph\Path.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Graph\Path.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Path.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\src\Graph\Path.cpp > CMakeFiles\ExploreIT.dir\src\Graph\Path.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Path.cpp" > CMakeFiles\ExploreIT.dir\src\Graph\Path.cpp.i
 
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\src\Graph\Path.cpp -o CMakeFiles\ExploreIT.dir\src\Graph\Path.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Graph\Path.cpp" -o CMakeFiles\ExploreIT.dir\src\Graph\Path.cpp.s
 
 CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: CMakeFiles/ExploreIT.dir/flags.make
 CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: CMakeFiles/ExploreIT.dir/includes_CXX.rsp
 CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj: ../src/Utils/tourHandling.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.obj -c F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.obj -c "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp"
 
 CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp > CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp" > CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.i
 
 CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExploreIT.dir/src/Utils/tourHandling.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CAL\proj\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp -o CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\src\Utils\tourHandling.cpp" -o CMakeFiles\ExploreIT.dir\src\Utils\tourHandling.cpp.s
 
 # Object files for target ExploreIT
 ExploreIT_OBJECTS = \
@@ -242,7 +242,7 @@ ExploreIT.exe: CMakeFiles/ExploreIT.dir/build.make
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/linklibs.rsp
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/objects1.rsp
 ExploreIT.exe: CMakeFiles/ExploreIT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ExploreIT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ExploreIT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ExploreIT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -255,6 +255,6 @@ CMakeFiles/ExploreIT.dir/clean:
 .PHONY : CMakeFiles/ExploreIT.dir/clean
 
 CMakeFiles/ExploreIT.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\CAL\proj\FEUP-CAL-PROJ F:\CAL\proj\FEUP-CAL-PROJ F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles\ExploreIT.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ" "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ" "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug" "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug" "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles\ExploreIT.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/ExploreIT.dir/depend
 

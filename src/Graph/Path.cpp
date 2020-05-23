@@ -39,13 +39,14 @@ void Path::verifyDifficulty(int max_difficulty) {
 void Path::setPath(vector<int> path) {this->path = path;}
 
 Path Path::operator+(const Path &path1) {
-    Path* res = new Path(*this);
-    vector <int> temp = this->getPath();
+    vector <int> temp;
     for (auto v: this->getPath())
         temp.push_back(v);
-    for (auto v: res->getPath())
-        temp.push_back(v);
-    res->setPath(temp);
-    res->distance += path1.distance;
-    return *res;
+    for (auto v: path1.getPath())
+        if (v != path1.getPath().at(0))
+            temp.push_back(v);
+
+    double new_distance = this->distance + path1.distance;
+    int max_difficulty = max(this->max_difficulty, path1.max_difficulty);
+    return Path(temp, new_distance, 1);
 }

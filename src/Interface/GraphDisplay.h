@@ -15,6 +15,7 @@ public:
     GraphDisplay(Graph<coordinates> &graph, int width, int height);
     void setGraph(Graph<coordinates> &graph);
     void show();
+    void showPath(Path path);
     void close();
 };
 
