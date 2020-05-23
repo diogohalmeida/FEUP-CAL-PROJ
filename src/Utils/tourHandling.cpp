@@ -1,12 +1,9 @@
 #include "tourHandling.h"
 
-
-
-vector<Path> tourGenerator(Graph<coordinates> graph, vector<Worker> workers){
-    srand(time(NULL));
+vector <Path> toLunchPaths(Graph<coordinates> graph, vector<Worker> workers, int &lunch_point) {
     vector<Path> toLunchPaths;
     int starting_point = -1;
-    int lunch_point = -1;
+    lunch_point = -1;
 
     //Choose meeting point
     while (toLunchPaths.size() < workers.size()) {
@@ -24,12 +21,12 @@ vector<Path> tourGenerator(Graph<coordinates> graph, vector<Worker> workers){
 
         vector<int> starting = {};
         for (Vertex<coordinates> *vertex: graph.getVertexSet()){
-                Path path = graph.dijkstraShortestPath(vertex->getID(), lunch_point);
-                //generate paths between 4000 and 5000 m
-                if (path.getDistance() > 4000 && path.getDistance() < 5000){
-                    toLunchPaths.push_back(path);
-                    starting.push_back(vertex->getID());
-                }
+            Path path = graph.dijkstraShortestPath(vertex->getID(), lunch_point);
+            //generate paths between 4000 and 5000 m
+            if (path.getDistance() > 4000 && path.getDistance() < 5000){
+                toLunchPaths.push_back(path);
+                starting.push_back(vertex->getID());
+            }
         }
         if (starting.size() > workers.size()){
             break;
@@ -42,21 +39,15 @@ vector<Path> tourGenerator(Graph<coordinates> graph, vector<Worker> workers){
     }
     cout << toLunchPaths.size() << endl;
 
-    /*
-    cout << "\nPath 1: " << toLunchPaths[0].getDistance() << endl;
-    cout << "Path 2: " << toLunchPaths[1].getDistance() << endl;
-    cout << "result: " << (toLunchPaths[0] + toLunchPaths[1]).getDistance();
-    cout << endl;
-     */
 
-    //Path path = toLunchPaths[0] + toLunchPaths[1];
+    return toLunchPaths;
 
-    //return toLunchPaths;
+}
 
+vector <Path> getSingleEndPath(Graph<coordinates> graph, vector<Worker> workers, const int lunch_point, vector <Path> toLunchPaths){
     vector<Path> toEndPaths;
     //Max duration overall
     int duration_left = workers.at(0).getMaxDuration() - 5;    //Tmax - (14-9)
-    int middle_point = -1;
     int ending_point = -1;
 
 
@@ -83,3 +74,109 @@ vector<Path> tourGenerator(Graph<coordinates> graph, vector<Worker> workers){
     return final;
 }
 
+vector <Path> concatenatePathvectors(vector<Path> v1, vector <Path> v2){
+    vector <Path> res;
+    for (Path p1: v1) {
+        for (Path p2: v2){
+            Path temp(p1);
+            temp = temp + p2;
+            res.push_back(temp);
+            break;
+        }
+    }
+    return res;
+}
+
+vector <Path> generateDifferentEndPaths(Graph<coordinates> graph, vector<Worker> workers, const int lunch_point, vector <Path> toLunchPaths){
+    vector <Path> paths;
+    int duration_left = workers.at(0).getMaxDuration() - 5;    //Tmax - (14-9)
+    int distance_left = duration_left * 1000; //walking speed = 1km/h
+    int end_point = -1;
+
+    vector <int> possibleIntermediates;
+    for (auto i: graph.getVertexSet()){
+        if (graph.findVertex(i->getID()) != nullptr) possibleIntermediates.push_back(i->getID());
+    }
+
+    while (true){
+        int intermediate_choice = rand() % (possibleIntermediates.size());
+        end_point = rand() % (graph.getVertexSet().size());
+        if (graph.findVertex(graph.getVertexSet().at(end_point)->getID())->getTag() == "meeting_point") {
+            Path path = graph.dijkstraShortestPath(possibleIntermediates.at(intermediate_choice), graph.getVertexSet().at(end_point)->getID());
+            end_point = graph.getVertexSet().at(end_point)->getID();
+            if (path.getDistance()/3 < distance_left) break;
+        }
+    }
+
+    for (int i = 0; i < 3000; i++) {
+        //while (true){
+        int intermediate_choice = rand() % (possibleIntermediates.size());
+        //end_point = rand() % (possibleIntermediates.size());
+        //if (graph.findVertex(intermediate_choice) == nullptr) continue;
+        Path toAdd = graph.dijkstraShortestPath(lunch_point, possibleIntermediates.at(intermediate_choice));
+        Path temp = graph.dijkstraShortestPath(possibleIntermediates.at(intermediate_choice), end_point);
+        toAdd = toAdd + temp;
+        if (toAdd.getDistance() < distance_left){
+            //cout << "Path adicionado -> " << toAdd.getDistance() << endl;
+            paths.push_back(toAdd);
+            //   break;
+        }
+        //}
+    }
+
+    if (paths.size() ==  0){
+        cout << "We couldn't generate different end paths! Generating one for all the workers...\n";
+        return getSingleEndPath(graph, workers, lunch_point, toLunchPaths);
+    }
+    cout << paths.size() << endl;
+    return concatenatePathvectors(toLunchPaths, paths);
+}
+
+//Generate Paths with
+vector<Path> tourGenerator(Graph<coordinates> graph, vector<Worker> workers, int single){
+    srand(time(NULL));
+    int lunch_point;
+    vector <Path> toLunch = toLunchPaths(graph, workers, lunch_point);
+    vector<Path> final_paths;
+    if (single == 0) {
+         final_paths = generateDifferentEndPaths(graph, workers, lunch_point, toLunch);
+    }
+    else
+        final_paths = getSingleEndPath(graph, workers, lunch_point, toLunch);
+
+    return final_paths;
+}
+
+
+
+void givePathsToWorkers(vector<Worker> & workers, vector<Path> paths) {
+    sort(workers.begin(), workers.end(), [](const Worker &w1, const Worker &w2) {
+        return w1.getSkill() < w2.getSkill();
+    });
+
+    vector<Path> paths1;
+    vector<Path> paths2;
+    vector<Path> paths3;
+
+    for (Path path: paths) {
+        if (path.getMaxDifficulty() == 1) {
+            paths1.push_back(path);
+            continue;
+        }
+        if (path.getMaxDifficulty() == 2) {
+            paths2.push_back(path);
+            continue;
+        }
+        if (path.getMaxDifficulty() == 3) {
+            paths3.push_back(path);
+            continue;
+        }
+    }
+    /*
+    for (Worker worker: workers){
+        if (worker.getSkill() == 3){
+            for ()
+        }
+    }
+     */
+}

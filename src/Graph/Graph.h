@@ -55,7 +55,7 @@ public:
 	T getInfo() const;
 	vector<Edge<T> *> getAdj() const;
     vector<Edge<T> *> getIncoming() const;
-    double getCostTo(int dest_id) const;
+    double getCostTo(int dest_id, int & difficulty) const;
     double getDist() const;
     void setTag(string tag);
     double distance(Vertex<T>* destination);
@@ -177,9 +177,10 @@ T Vertex<T>::getInfo() const {
 }
 
 template<class T>
-double Vertex<T>::getCostTo(int dest_id) const {
+double Vertex<T>::getCostTo(int dest_id, int & difficulty) const {
     for (auto e : outgoing) {
         if (e->dest->getID() == dest_id) {
+            difficulty = e->difficulty;
             return e->getWeight();
         }
     }
@@ -520,14 +521,18 @@ Path Graph<T>::dijkstraShortestPath(const int &origin, const int &destination) {
     path.push_back(dest->id);
     Vertex<T>* vertex = dest;
     double distance=0;
-    int difficulty = 1;
+    int difficulty, max;
+    max = 0;
     while (vertex->path != NULL) {
-        distance+= vertex->path->getCostTo(vertex->getID());
+        distance+= vertex->path->getCostTo(vertex->getID(), difficulty);
+        if (difficulty > max) {
+            max = difficulty;
+        }
         vertex = vertex->path;
         path.emplace(path.begin(), vertex->id);
     }
 
-    return Path(path, distance, difficulty);
+    return Path(path, distance, max);
 }
 
 /*

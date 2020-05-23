@@ -30,10 +30,8 @@ double Path::getDistance() const {
     return this->distance;
 }
 
-void Path::verifyDifficulty(int max_difficulty) {
-    if (max_difficulty > this->max_difficulty){
-        this->max_difficulty = max_difficulty;
-    }
+int Path::getMaxDifficulty() const {
+    return this->max_difficulty;
 }
 
 void Path::setPath(vector<int> path) {this->path = path;}
@@ -47,6 +45,7 @@ Path Path::operator+(const Path &path1) {
             temp.push_back(v);
 
     double new_distance = this->distance + path1.distance;
-    int max_difficulty = max(this->max_difficulty, path1.max_difficulty);
-    return Path(temp, new_distance, 1);
+    int max_dif = max(this->max_difficulty, path1.max_difficulty);
+    return Path(temp, new_distance, max_dif);
 }
+

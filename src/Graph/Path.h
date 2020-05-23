@@ -16,11 +16,9 @@ public:
     void addDistance(double distance);
     double getDistance() const;
     vector<int> getPath() const;
+    int getMaxDifficulty() const;
     void setPath(vector <int> path);
-    void verifyDifficulty(int max_difficulty);
     Path operator+ (const Path& path1);
-
-
 };
 
 

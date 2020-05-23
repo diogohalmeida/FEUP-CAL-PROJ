@@ -24,8 +24,16 @@ void Worker::setString(string name) {
     this->name = name;
 }
 
-Worker::Worker(string name, int skill, int max_duration) {
+Worker::Worker(string name, int skill, int max_duration, Path path) : path(path) {
     this->name = name;
     this->skill = skill;
     this->max_duration = max_duration;
+}
+
+Path Worker::getPath() const {
+    return this->path;
+}
+
+void Worker::setPath(Path path) {
+    this->path = path;
 }

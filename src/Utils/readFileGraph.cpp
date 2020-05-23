@@ -35,7 +35,7 @@ void readNodes(Graph<coordinates> &graph, string city){
         for (int i = 0; i < numNodes; i++){
             getline(nodeFile, line);
             vector<int> data = stringToDataVector(line);
-            int choice = rand() % 8 + 1;
+            int choice = rand() % 10 + 1;
             string tag;
             if (choice == 5){
                 tag = "meeting_point";
@@ -65,12 +65,10 @@ void readEdges(Graph<coordinates> &graph, string city){
         for (int i = 0; i < numEdges; i++){
             getline(edgeFile, line);
             vector<int> data = stringToDataVector(line);
-            int choice = rand() % 50 + 1;
+            int choice = rand() % 80 + 1;
             int difficulty;
-            if (choice > 49){
-                int max = 4;
-                int min = 3;
-                difficulty = rand()%(max-min+1)+min;
+            if (choice > 79){
+                difficulty = 3;
             }
             else if (choice < 5){
                 difficulty = 2;
@@ -87,56 +85,3 @@ void readEdges(Graph<coordinates> &graph, string city){
     edgeFile.close();
 }
 
-
-void readTags(Graph<coordinates> &graph, string city){
-    //Tags 1
-    string cityLowercase = toLower(city);
-    string fileDir1 = "../resources/TagExamples/" + city + "/t03_tags_" + cityLowercase + ".txt";
-    ifstream tagFile1, tagFile2;
-    tagFile1.open(fileDir1);
-    if (tagFile1.is_open()){
-        string line;
-        getline(tagFile1, line);
-        int numTags = stoi(line);
-        for (int i = 0; i < numTags; i++){
-            string tag;
-            getline(tagFile1, tag);
-            tag.erase(0,8);
-            getline(tagFile1, line);
-            int numNodes = stoi(line);
-            for (int j = 0; j < numNodes; j++){
-                getline(tagFile1, line);
-                Vertex<coordinates>* v = graph.findVertex(stoi(line));
-                v->setTag(tag);
-            }
-        }
-    }
-    else{
-        cerr << "Tags file could not be opened!" << endl;
-    }
-    tagFile1.close();
-
-    //Tags 2
-    string fileDir2 = "../resources/TagExamples/" + city + "/t10_tags_" + cityLowercase + ".txt";
-    tagFile2.open(fileDir2);
-    if (tagFile2.is_open()){
-        string line;
-        getline(tagFile2, line);
-        int numTags = stoi(line);
-        for (int i = 0; i < numTags; i++){
-            string tag;
-            getline(tagFile2, tag);
-            tag.erase(0,8);
-            getline(tagFile2, line);
-            int numNodes = stoi(line);
-            for (int j = 0; j < numNodes; j++){
-                getline(tagFile2, line);
-                Vertex<coordinates>* v = graph.findVertex(stoi(line));
-                v->setTag(tag);
-            }
-        }
-    }
-    else{
-        cerr << "Tags file could not be opened!" << endl;
-    }
-}

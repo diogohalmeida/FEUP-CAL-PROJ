@@ -26,8 +26,12 @@ CMakeFiles/ExploreIT.dir/main.cpp.obj
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/readFileGraph.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Utils/tourHandling.h
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj
+ ../lib/connection.h
+ ../lib/edgetype.h
+ ../lib/graphviewer.h
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.cpp
  C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Client/Worker.h
+ C:/Users/Diogo Almeida/Desktop/FEUP-CAL-PROJ/src/Graph/Path.h
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj
  ../lib/connection.h
  ../lib/edgetype.h

@@ -46,9 +46,6 @@ void GraphDisplay::show() {
                 case 3:
                     gv->setEdgeColor(id, "orange");
                     break;
-                case 4:
-                    gv->setEdgeColor(id, "red");
-                    break;
             }
             gv->addEdge(id,vertex->getID(),edge->getDest()->getID(),EdgeType::UNDIRECTED);
             //gv->setEdgeLabel(id, to_string(edge->getWeight()));
@@ -143,9 +140,6 @@ void GraphDisplay::showPath(Path path) {
                         break;
                     case 3:
                         gv->setEdgeColor(id, "orange");
-                        break;
-                    case 4:
-                        gv->setEdgeColor(id, "red");
                         break;
                 }
 

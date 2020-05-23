@@ -25,8 +25,12 @@ CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Interface/menu.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/readFileGraph.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/tourHandling.h
 
+CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../lib/connection.h
+CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../lib/edgetype.h
+CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../lib/graphviewer.h
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Client/Worker.cpp
 CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Client/Worker.h
+CMakeFiles/ExploreIT.dir/src/Client/Worker.cpp.obj: ../src/Graph/Path.h
 
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../lib/connection.h
 CMakeFiles/ExploreIT.dir/src/Graph/Path.cpp.obj: ../lib/edgetype.h

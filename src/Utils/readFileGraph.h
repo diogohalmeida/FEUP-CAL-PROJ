@@ -14,7 +14,6 @@ void readNodes(Graph<coordinates> &graph, string city);
 
 void readEdges(Graph<coordinates> &graph, string city);
 
-void readTags(Graph<coordinates> &graph, string city);
 
 
 #endif //EXPLOREIT_READFILEGRAPH_H
