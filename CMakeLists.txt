@@ -9,4 +9,4 @@ link_libraries(ws2_32 wsock32)
 
 include_directories(lib)
 include_directories(resources)
-add_executable(ExploreIT main.cpp lib/connection.cpp lib/graphviewer.cpp src/Utils/readFileGraph.cpp src/Utils/readFileGraph.h src/Graph/Graph.h src/Utils/utils.cpp src/Utils/utils.h src/Interface/menu.cpp src/Interface/menu.h src/Interface/GraphDisplay.cpp src/Interface/GraphDisplay.h src/Utils/verifications.cpp src/Utils/verifications.h src/Client/Worker.cpp src/Client/Worker.h src/Graph/Path.cpp src/Graph/Path.h src/Utils/tourHandling.cpp src/Utils/tourHandling.h)
+add_executable(ExploreIT main.cpp lib/connection.cpp lib/graphviewer.cpp src/Utils/readFileGraph.cpp src/Utils/readFileGraph.h src/Graph/Graph.h src/Utils/utils.cpp src/Utils/utils.h src/Interface/menu.cpp src/Interface/menu.h src/Interface/GraphDisplay.cpp src/Interface/GraphDisplay.h src/Utils/verifications.cpp src/Utils/verifications.h src/Client/Worker.cpp src/Client/Worker.h src/Graph/Path.cpp src/Graph/Path.h src/Utils/tourHandling.cpp src/Utils/tourHandling.h src/Utils/Timer.h)

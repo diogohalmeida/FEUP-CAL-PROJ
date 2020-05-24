@@ -22,6 +22,7 @@ CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Graph/MutablePriorityQueue.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Graph/Path.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Interface/GraphDisplay.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Interface/menu.h
+CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/Timer.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/readFileGraph.h
 CMakeFiles/ExploreIT.dir/main.cpp.obj: ../src/Utils/tourHandling.h
 
@@ -60,6 +61,7 @@ CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Graph/Path.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Interface/GraphDisplay.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Interface/menu.cpp
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Interface/menu.h
+CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Utils/Timer.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Utils/readFileGraph.h
 CMakeFiles/ExploreIT.dir/src/Interface/menu.cpp.obj: ../src/Utils/tourHandling.h
 

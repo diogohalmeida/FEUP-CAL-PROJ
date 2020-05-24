@@ -23,6 +23,7 @@ template <class T> class Graph;
 typedef pair<double, double> coordinates;
 
 constexpr auto INF = std::numeric_limits<double>::max();
+//Graph class, algorithms used to generate shortest paths are implemented here
 
 /*
  * ================================================================================================
@@ -33,7 +34,6 @@ template <class T>
 class Vertex {
 	int id;
 	string tag;
-	int dp;
 	T info;
 	vector<Edge<T> *> outgoing;
 	vector<Edge<T>*> incoming;
@@ -125,16 +125,14 @@ public:
     double getMaxY() {return this->maxY;}
     double getMinY() {return this->minY;}
 
-    Edge<T>* removeBiDirEdge(const int &sourc, const int &dest);
-    Vertex<T>* removeVertex(const int &in);
 
     vector<int> dfs(const int & source) const;
     vector<int> bfs(const int & source) const;
 
     void dijkstraShortestPath(const T &origin);
     Path dijkstraShortestPath(const int &origin, const int &destination);
-    vector<Path> yenKShortestPaths(const int &source, const int &dest, const int &K);
-    vector<int> getVector(int a, int b, vector<int> copy);
+
+    Path AstarShortestPath(const int id_src, const int id_dest, function<double (T, T)> h);
 };
 
 /* ================================================================================================
@@ -357,36 +355,6 @@ Vertex<T> *Graph<T>::findVertex(const T &info) const {
     return nullptr;
 }
 
-template <class T>
-Edge<T>* Graph<T>::removeBiDirEdge(const int &sourc, const int &dest) {
-    Vertex<T> *source = findVertex(sourc);
-    Vertex<T> *destination = findVertex(dest);
-    if (source == NULL || destination == NULL)
-        return NULL;
-    destination->removeEdgeTo(source);
-    return source->removeEdgeTo(destination);
-}
-
-template <class T>
-Vertex<T>* Graph<T>::removeVertex(const int &in) {
-    // HINT: use an iterator to scan the "vertexSet" vector and then erase the vertex.
-    // HINT: take advantage of "removeEdgeTo" to remove incoming edges.
-    Vertex<coordinates>* copy = findVertex(in);
-    if (findVertex(in) == NULL){
-        return NULL;
-    }
-    for (auto it = vertexSet.begin(); it != vertexSet.end(); it){
-        if ((*it)->id == in){
-            it = vertexSet.erase(it);
-        }
-        else{
-            (*it)->removeEdgeTo(copy);
-            it++;
-        }
-    }
-    return copy;
-}
-
 
 /* ================================================================================================
  * Algorithms
@@ -400,7 +368,6 @@ Vertex<T>* Graph<T>::removeVertex(const int &in) {
  */
 template <class T>
 vector<int> Graph<T>::dfs(const int & source) const {
-    // DONE (7 lines)
     vector<int> res;
 
     for(Vertex<T> *vertex:this->vertexSet){
@@ -440,9 +407,6 @@ void Graph<T>::dfsVisit(Vertex<T> *v, vector<int> & res) const {
  */
 template <class T>
 vector<int> Graph<T>::bfs(const int & source) const {
-    // DONE (22 lines)
-    // HINT: Use the flag "visited" to mark newly discovered vertices .
-    // HINT: Use the "queue<>" class to temporarily store the vertices.
     vector<int> res; queue<Vertex<T>*> aux;
     for(Vertex<T> *vertex:vertexSet){vertex->visited=false;} //no visited
     Vertex<T> *vertex= findVertex(source);  //Find Source Vertex
@@ -467,7 +431,6 @@ vector<int> Graph<T>::bfs(const int & source) const {
 
 template<class T>
 void Graph<T>::dijkstraShortestPath(const T &origin) {
-
     for(Vertex<T>* vertex: vertexSet){
         vertex->dist=INT_MAX;
         vertex->path=NULL;
@@ -535,101 +498,60 @@ Path Graph<T>::dijkstraShortestPath(const int &origin, const int &destination) {
     return Path(path, distance, max);
 }
 
-/*
+
 template<class T>
-vector<int> Graph<T>::getVector(int a, int b, vector<int> copy){
-    vector<int> result;
-    for (int j = a; j <= b; j++){
-        result.push_back(copy.at(j));
+Path Graph<T>::AstarShortestPath(const int id_src, const int id_dest, function<double (T, T)> h) {
+    for (Vertex<T> *vert: vertexSet) {
+        vert->dist = INT_MAX;
+        vert->path = NULL;
+        vert->queueIndex = 0;
     }
 
-    return result;
-}
-*/
+    Vertex<T> *src = findVertex(id_src), *dest = findVertex(id_dest), *v;
+    src->dist = h(src->getInfo(), dest->getInfo());
+    MutablePriorityQueue<Vertex<T>> queue;
+    queue.insert(src);
 
-/*
-template<class T>
-vector<Path> Graph<T>::yenKShortestPaths(const int &source, const int &dest, const int &K){
-    vector<Path> result;
-    //Determine the shortest from the source to the dest
-    result.push_back(dijkstraShortestPath(source,dest));
+    while (!queue.empty()){
+        v = queue.extractMin();
 
-    //Initialize the vector to store the potential kth shortest path
-    vector<Path> potential = {};
-
-    for (int k = 1; k <= K; k++){
-        // The spur node ranges from the first node to the next to last node in the previous k-shortest path.
-        vector<Edge<T>*> removed_edges = {};
-        vector<Vertex<T>*> removed_vertices = {};
-        for (int i = 0; i <= (result.at(k-1).getPath().size() - 2); i++){
-            // Spur node is retrieved from the previous k-shortest path, k − 1.
-            int spurNodeID = result.at(k-1).getPath().at(i);
-            // The sequence of nodes from the source to the spur node of the previous k-shortest path.
-            vector<int> rootPath = getVector(0, i, result.at(k-1).getPath());
-
-            for (Path path: result){
-                vector<int> path_compare = getVector(0, i, path.getPath());
-                if (rootPath == path_compare) {
-                    // Remove the links that are part of the previous shortest paths which share the same root path.
-                    removed_edges.push_back(this->removeBiDirEdge(path.getPath().at(i), path.getPath().at(i + 1)));
-                }
-            }
-
-            for (int nodeID: rootPath){
-                if (nodeID != spurNodeID){
-                    removed_vertices.push_back(this->removeVertex(nodeID));
-                }
-            }
-
-            // Calculate the spur path from the spur node to the sink.
-            Path spurPath = dijkstraShortestPath(spurNodeID, dest);
-
-            // Entire path is made up of the root path and spur path.
-            vector<int> totalPath = rootPath;
-            vector<int> spurPathVec = spurPath.getPath();
-            totalPath.insert(totalPath.end(), spurPathVec.begin()+1, spurPathVec.end());
-
-            bool found = false;
-            // Add the potential k-shortest path to the heap.
-            for (Path path: potential){
-                if (path.getPath() == totalPath){
-                    found = true;
-                    break;
-                }
-            }
-            if (!found){
-                Path new_path(totalPath);
-                potential.push_back(new_path);
-            }
-
-            // Add back the edges and nodes that were removed from the graph.
-            for (Vertex<T>* vertex: removed_vertices){
-                if (vertex != NULL) this->addVertex(vertex);
-            }
-
-            for (Edge<T>* edge: removed_edges){
-                if (edge != NULL) this->addBiDirEdge(edge->orig->getID(), edge->dest->getID(), edge->difficulty);
-            }
+        if (v == dest){
+            break;
         }
 
-        if (potential.empty())
-        // This handles the case of there being no spur paths, or no spur paths left.
-        // This could happen if the spur paths have already been exhausted (added to A),
-        // or there are no spur paths at all - such as when both the source and sink vertices
-        // lie along a "dead end".
-            break;
-
-        // Sort the potential k-shortest paths by cost.
-        //potential.sort();
-        // Add the lowest cost path becomes the k-shortest path.
-        result.push_back(potential.at(0));
-        // In fact we should rather use shift since we are removing the first element
-        potential.pop_back();
+        for (Edge<T> *w : v->getAdj()){
+            double f = v->dist - h(v->getInfo(), dest->getInfo()) +  w->getCost() + h(w->dest->getInfo(), dest->getInfo());
+            if (w->dest->getDist() > f){
+                double d = w->dest->getDist();
+                w->dest->dist = f;
+                w->dest->path = v;
+                if (d == INT_MAX){
+                    queue.insert(w->dest);
+                }
+                else {
+                    queue.decreaseKey(w->dest);
+                }
+            }
+        }
     }
-    return result;
 
+    vector<int> path;
+    double length = 0;
+    path.push_back(dest->id);
+    Vertex<T>* vertex = dest;
+
+    int difficulty, max;
+    max = 0;
+    while (vertex->path != NULL) {
+        length += vertex->path->getCostTo(vertex->id);
+        if (difficulty > max) {
+            max = difficulty;
+        }
+        vertex = vertex->path;
+        path.emplace(path.begin(), vertex->id);
+    }
+
+    return Path(path, length, max);
 }
-
-*/
 
 #endif /*GRAPH_H_*/

@@ -19,10 +19,10 @@ Graph<coordinates> readGraph(string city){
     Graph<coordinates> graph;
     readNodes(graph, city);
     readEdges(graph, city);
-    //readTags(graph,city);
     return graph;
 }
 
+//Reade nodes file
 void readNodes(Graph<coordinates> &graph, string city){
     string cityLowercase = toLower(city);
     string fileDir = "../resources/Maps/Penafiel/" + city + "_nodes_xy.txt";
@@ -53,6 +53,7 @@ void readNodes(Graph<coordinates> &graph, string city){
 
 }
 
+//Read edges file
 void readEdges(Graph<coordinates> &graph, string city){
     string cityLowercase = toLower(city);
     string fileDir = "../resources/Maps/Penafiel/" + city + "_edges.txt";
@@ -76,7 +77,12 @@ void readEdges(Graph<coordinates> &graph, string city){
             else{
                 difficulty = 1;
             }
-            graph.addBiDirEdge(data.at(0), data.at(1), difficulty);
+            if (city ==" penafiel_full"){
+                graph.addEdge(data.at(0), data.at(1), difficulty);
+            }
+            else {
+                graph.addBiDirEdge(data.at(0), data.at(1), difficulty);
+            }
         }
     }
     else{

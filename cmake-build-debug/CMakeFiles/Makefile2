@@ -34,19 +34,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "F:\Clion\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "F:\Clion\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\CAL\proj\FEUP-CAL-PROJ
+CMAKE_SOURCE_DIR = "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -73,14 +73,14 @@ preinstall:
 CMakeFiles/ExploreIT.dir/all:
 	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/depend
 	$(MAKE) -f CMakeFiles\ExploreIT.dir\build.make CMakeFiles/ExploreIT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target ExploreIT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target ExploreIT"
 .PHONY : CMakeFiles/ExploreIT.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ExploreIT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" 12
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/ExploreIT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\CAL\proj\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Diogo Almeida\Desktop\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/ExploreIT.dir/rule
 
 # Convenience name for target.

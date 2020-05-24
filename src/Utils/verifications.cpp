@@ -1,5 +1,6 @@
 #include "verifications.h"
 
+//Used to check valid names
 void verifyAllLetters(string &aux) {
     string alphabet = "abcdefghijklmnopqrstuvwxyzãáàâçéêíõóôúüÃÁÀÂÇÉÊÍÕÓÔÚÜ";
     bool isValid = false;
@@ -28,7 +29,7 @@ void verifyAllLetters(string &aux) {
 
 }
 
-
+//Used to check menu inputs
 void verifyMenuOptions(int &option, int omin, int nmax){
     cin >> option;
     while (cin.fail() || option > nmax || option < omin) {

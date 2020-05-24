@@ -1,5 +1,6 @@
 #include "tourHandling.h"
 
+//Generate different paths from various starting points to lunch
 vector <Path> toLunchPaths(Graph<coordinates> graph, vector<Worker> workers, int &lunch_point) {
     vector<Path> toLunchPaths;
     int starting_point = -1;
@@ -22,7 +23,7 @@ vector <Path> toLunchPaths(Graph<coordinates> graph, vector<Worker> workers, int
         vector<int> starting = {};
         for (Vertex<coordinates> *vertex: graph.getVertexSet()){
             Path path = graph.dijkstraShortestPath(vertex->getID(), lunch_point);
-            //generate paths between 4000 and 5000 m
+            //Generate paths between 4000 and 5000 m
             if (path.getDistance() > 4000 && path.getDistance() < 5000){
                 toLunchPaths.push_back(path);
                 starting.push_back(vertex->getID());
@@ -37,13 +38,12 @@ vector <Path> toLunchPaths(Graph<coordinates> graph, vector<Worker> workers, int
         }
 
     }
-    cout << toLunchPaths.size() << endl;
-
-
+    cout << toLunchPaths.size() << endl;    //Print to console all paths generated from start to lunch
     return toLunchPaths;
 
 }
 
+//Get one single path from lunch to end for every worker
 vector <Path> getSingleEndPath(Graph<coordinates> graph, vector<Worker> workers, const int lunch_point, vector <Path> toLunchPaths){
     vector<Path> toEndPaths;
     //Max duration overall
@@ -74,6 +74,7 @@ vector <Path> getSingleEndPath(Graph<coordinates> graph, vector<Worker> workers,
     return final;
 }
 
+//Join both paths (start-lunch|lunch-finish) to get the full tour
 vector <Path> concatenatePathvectors(vector<Path> v1, vector <Path> v2){
     vector <Path> res;
     for (Path p1: v1) {
@@ -87,6 +88,7 @@ vector <Path> concatenatePathvectors(vector<Path> v1, vector <Path> v2){
     return res;
 }
 
+//Get various paths from lunch to end for every worker
 vector <Path> generateDifferentEndPaths(Graph<coordinates> graph, vector<Worker> workers, const int lunch_point, vector <Path> toLunchPaths){
     vector <Path> paths;
     int duration_left = workers.at(0).getMaxDuration() - 5;    //Tmax - (14-9)
@@ -109,30 +111,23 @@ vector <Path> generateDifferentEndPaths(Graph<coordinates> graph, vector<Worker>
     }
 
     for (int i = 0; i < 3000; i++) {
-        //while (true){
         int intermediate_choice = rand() % (possibleIntermediates.size());
-        //end_point = rand() % (possibleIntermediates.size());
-        //if (graph.findVertex(intermediate_choice) == nullptr) continue;
         Path toAdd = graph.dijkstraShortestPath(lunch_point, possibleIntermediates.at(intermediate_choice));
         Path temp = graph.dijkstraShortestPath(possibleIntermediates.at(intermediate_choice), end_point);
         toAdd = toAdd + temp;
         if (toAdd.getDistance() < distance_left){
-            //cout << "Path adicionado -> " << toAdd.getDistance() << endl;
             paths.push_back(toAdd);
-            //   break;
         }
-        //}
     }
 
     if (paths.size() ==  0){
-        cout << "We couldn't generate different end paths! Generating one for all the workers...\n";
         return getSingleEndPath(graph, workers, lunch_point, toLunchPaths);
     }
     cout << paths.size() << endl;
     return concatenatePathvectors(toLunchPaths, paths);
 }
 
-//Generate Paths with
+//Generate Paths for workers
 vector<Path> tourGenerator(Graph<coordinates> graph, vector<Worker> workers, int single){
     srand(time(NULL));
     int lunch_point;
@@ -148,7 +143,7 @@ vector<Path> tourGenerator(Graph<coordinates> graph, vector<Worker> workers, int
 }
 
 
-
+//Distribute paths to workers based on their skill
 void givePathsToWorkers(vector<Worker> & workers, vector<Path> paths) {
     sort(workers.begin(), workers.end(), [](const Worker &w1, const Worker &w2) {
         return w1.getSkill() < w2.getSkill();
@@ -173,9 +168,9 @@ void givePathsToWorkers(vector<Worker> & workers, vector<Path> paths) {
         }
     }
 
-    cout << "Paths3 size: " << paths3.size() << endl;
-    cout << "Paths2 size: " << paths2.size() << endl;
-    cout << "Paths1 size: " << paths1.size() << endl;
+    cout << "Paths with difficulty 3 size: " << paths3.size() << endl;
+    cout << "Paths with difficulty 2 size: " << paths2.size() << endl;
+    cout << "Paths with difficulty 1 size: " << paths1.size() << endl;
 
     //Mudar para iteradores
     for (Worker& worker: workers){

@@ -16,6 +16,7 @@ public:
     void setGraph(Graph<coordinates> &graph);
     void show();
     void showPath(Path path);
+    void showSearch(vector<int> path, int difficulty);
     void close();
 };
 

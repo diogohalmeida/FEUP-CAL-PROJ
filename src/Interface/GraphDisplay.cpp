@@ -11,6 +11,7 @@ void GraphDisplay::setGraph(Graph<coordinates> &graph) {
     this->graph = graph;
 }
 
+//Show a graph
 void GraphDisplay::show() {
     gv->defineVertexColor("gray");
     gv->defineVertexSize(5);
@@ -28,8 +29,6 @@ void GraphDisplay::show() {
             gv->setVertexSize(vertex->getID(), 8);
         }
         gv->addNode(vertex->getID(), (int) (xPercent * width), (int) (yPercent * height));
-        //gv->setVertexLabel(vertex->getID(), vertex->getTag());
-        gv->setVertexLabel(vertex->getID(), to_string(vertex->getID()));
     }
 
     int id = 0;
@@ -48,7 +47,6 @@ void GraphDisplay::show() {
                     break;
             }
             gv->addEdge(id,vertex->getID(),edge->getDest()->getID(),EdgeType::UNDIRECTED);
-            //gv->setEdgeLabel(id, to_string(edge->getWeight()));
             id++;
         }
     }
@@ -57,7 +55,7 @@ void GraphDisplay::show() {
     this->close();
 }
 
-
+//Show a path on a map
 void GraphDisplay::showPath(Path path) {
     gv->defineVertexColor("gray");
     gv->defineVertexSize(5);
@@ -104,8 +102,6 @@ void GraphDisplay::showPath(Path path) {
 
 
         gv->addNode(vertex->getID(), (int) (xPercent * width), (int) (yPercent * height));
-        //gv->setVertexLabel(vertex->getID(), vertex->getTag());
-        //gv->setVertexLabel(vertex->getID(), to_string(vertex->getID()));
     }
 
     int id = 0;
@@ -114,13 +110,6 @@ void GraphDisplay::showPath(Path path) {
         bool found = false;
         for (Edge<coordinates>* edge: vertex->getAdj()){
             for (int i = 0; i < path_id.size()-1; i++){
-                if (path_id.at(i) == edge->getDest()->getID() && path_id.at(i+1) == vertex->getID()){
-                    gv->setEdgeColor(id, "blue");
-                    gv->setEdgeThickness(id, 5);
-                    gv->addEdge(id,vertex->getID(),edge->getDest()->getID(),EdgeType::UNDIRECTED);
-                    found = true;
-                    break;
-                }
                 if (path_id.at(i) == vertex->getID() && path_id.at(i+1) == edge->getDest()->getID()){
                     gv->setEdgeColor(id, "blue");
                     gv->setEdgeThickness(id, 5);
@@ -145,7 +134,6 @@ void GraphDisplay::showPath(Path path) {
 
                 gv->addEdge(id, vertex->getID(), edge->getDest()->getID(), EdgeType::UNDIRECTED);
             }
-            //gv->setEdgeLabel(id, to_string(edge->getWeight()));
             id++;
         }
     }
@@ -153,6 +141,63 @@ void GraphDisplay::showPath(Path path) {
     gv->rearrange();
     this->close();
 }
+
+
+//Show a search result in a graph by difficulty
+void GraphDisplay::showSearch(vector<int> path, int difficulty) {
+    gv->defineVertexColor("gray");
+    gv->defineVertexSize(5);
+    gv->defineEdgeCurved(false);
+    gv->createWindow(width, height);
+    double yPercent, xPercent;
+
+    for (Vertex<coordinates>* vertex: graph.getVertexSet()){
+
+        yPercent = (vertex->getInfo().second- graph.getMinY())/(graph.getMaxY() - graph.getMinY())*0.9 + 0.05;
+        xPercent = (vertex->getInfo().first - graph.getMinX())/(graph.getMaxX() - graph.getMinX())*0.9 + 0.05;
+
+        if (vertex->getTag() == "meeting_point"){
+            gv->setVertexColor(vertex->getID(), "orange");
+            gv->setVertexSize(vertex->getID(), 8);
+        }
+
+        int id = vertex->getID();
+
+        if (find(path.begin(), path.end(),vertex->getID()) != path.end()){
+            gv->setVertexColor(vertex->getID(), "blue");
+            gv->setVertexSize(vertex->getID(), 8);
+        }
+
+        gv->addNode(vertex->getID(), (int) (xPercent * width), (int) (yPercent * height));
+    }
+
+    int id = 0;
+    for (Vertex<coordinates>* vertex: graph.getVertexSet()){
+        bool found = false;
+        for (Edge<coordinates>* edge: vertex->getAdj()){
+            if (edge->getDifficulty() <= difficulty) {
+                    gv->setEdgeThickness(id, 1);
+                    switch (edge->getDifficulty()) {
+                        case 1:
+                            gv->setEdgeColor(id, "green");
+                            break;
+                        case 2:
+                            gv->setEdgeColor(id, "yellow");
+                            break;
+                        case 3:
+                            gv->setEdgeColor(id, "orange");
+                            break;
+                    }
+                    gv->addEdge(id, vertex->getID(), edge->getDest()->getID(), EdgeType::UNDIRECTED);
+            }
+            id++;
+        }
+    }
+
+    gv->rearrange();
+    this->close();
+}
+
 
 
 

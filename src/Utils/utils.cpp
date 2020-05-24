@@ -56,6 +56,7 @@ string toLower(string const& str){
     return result;
 }
 
+
 vector<int> stringToDataVector(string str){
     string delimiter = ",";
     str = str.substr(1, str.size() - 2);
@@ -75,4 +76,9 @@ vector<int> stringToDataVector(string str){
     }
 
     return result;
+}
+
+//Used on A-Star
+double euclidianDistance(pair<double, double> p1, pair<double, double> p2) {
+    return sqrt(pow((p1.first - p2.first), 2) + pow((p1.second - p2.second), 2));
 }

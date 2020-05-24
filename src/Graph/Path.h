@@ -3,6 +3,7 @@
 #include <vector>
 #include <graphviewer.h>
 
+//Path class for workers
 class Path {
 private:
     vector <int> path;

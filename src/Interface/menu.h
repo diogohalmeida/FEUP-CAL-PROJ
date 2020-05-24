@@ -8,6 +8,7 @@
 #include "../Utils/tourHandling.h"
 #include "GraphDisplay.h"
 #include "../Client/Worker.h"
+#include "../Utils/Timer.h"
 
 int tourMenu(vector<Graph<coordinates>> regions);
 
