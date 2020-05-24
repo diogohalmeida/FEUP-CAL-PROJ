@@ -8,7 +8,7 @@ int tourMenu(vector<Graph<coordinates>> regions){
     verifyMenuOptions(size, 2, 10);
     vector<Worker> workers;
     int duration, single;
-    cout << endl << "Tour's duration: Please keep in mind all tours start at 9:00 and can last up to 10 hours (with a 6 hour minimum duration)";
+    cout << endl << "Tour's duration: Please keep in mind all tours start at 9:00 and can last up to 10 hours (with a 6 hour minimum duration): ";
     cout << endl << "Please insert the tour's duration (in hours): ";
     verifyMenuOptions(duration, 6, 10);
     cout << endl << "Do you which to stay together as a group after lunch? (0 for NO / 1 for YES)";
