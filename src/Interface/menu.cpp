@@ -60,7 +60,7 @@ int tourMenu(vector<Graph<coordinates>> regions){
             cout << "Difficulty: " << workers.at(choice-1).getPath().getMaxDifficulty() << "< - Warning: the tour's difficulty exceeds the skill of the member  " << endl;
         else
             cout << "Difficulty: " << workers.at(choice-1).getPath().getMaxDifficulty();
-        cout << "Total Distance: " << workers.at(choice-1).getPath().getDistance() << endl;
+        cout << "\nTotal Distance: " << workers.at(choice-1).getPath().getDistance() << endl;
 
         GraphDisplay gd(regions.at(1), 1280, 720);
         gd.showPath(workers.at(choice-1).getPath());

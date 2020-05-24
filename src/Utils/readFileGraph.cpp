@@ -65,12 +65,12 @@ void readEdges(Graph<coordinates> &graph, string city){
         for (int i = 0; i < numEdges; i++){
             getline(edgeFile, line);
             vector<int> data = stringToDataVector(line);
-            int choice = rand() % 80 + 1;
+            int choice = rand() % 200 + 1;
             int difficulty;
-            if (choice > 79){
+            if (choice > 199){
                 difficulty = 3;
             }
-            else if (choice < 5){
+            else if (choice < 3){
                 difficulty = 2;
             }
             else{

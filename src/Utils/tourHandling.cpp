@@ -154,29 +154,77 @@ void givePathsToWorkers(vector<Worker> & workers, vector<Path> paths) {
         return w1.getSkill() < w2.getSkill();
     });
 
-    vector<Path> paths1;
-    vector<Path> paths2;
-    vector<Path> paths3;
+    queue<Path> paths1;
+    queue<Path> paths2;
+    queue<Path> paths3;
 
     for (Path path: paths) {
         if (path.getMaxDifficulty() == 1) {
-            paths1.push_back(path);
+            paths1.push(path);
             continue;
         }
         if (path.getMaxDifficulty() == 2) {
-            paths2.push_back(path);
+            paths2.push(path);
             continue;
         }
         if (path.getMaxDifficulty() == 3) {
-            paths3.push_back(path);
+            paths3.push(path);
             continue;
         }
     }
-    /*
-    for (Worker worker: workers){
+
+    cout << "Paths3 size: " << paths3.size() << endl;
+    cout << "Paths2 size: " << paths2.size() << endl;
+    cout << "Paths1 size: " << paths1.size() << endl;
+
+    //Mudar para iteradores
+    for (Worker& worker: workers){
         if (worker.getSkill() == 3){
-            for ()
+            Path temp = paths3.front();
+            worker.setPath(temp);
+            paths3.pop();
+            paths3.push(temp);
         }
-    }
-     */
+
+        if (worker.getSkill() == 2){
+            if (paths2.size() == 0) {
+                cout << "No possible paths generated with difficulty = 2\n";
+                Path temp = paths3.front();
+                worker.setPath(temp);
+                paths3.pop();
+                paths3.push(temp);
+            }
+            else {
+                Path temp = paths2.front();
+                worker.setPath(temp);
+                paths2.pop();
+                paths2.push(temp);
+            }
+        }
+
+        if (worker.getSkill() == 1){
+            if (paths1.size() == 0){
+                cout << "No possible paths generated with difficulty = 1\n";
+                if (paths2.size() == 0) {
+                    Path temp = paths3.front();
+                    worker.setPath(temp);
+                    paths3.pop();
+                    paths3.push(temp);
+                }
+                else{
+                    Path temp = paths2.front();
+                    worker.setPath(temp);
+                    paths2.pop();
+                    paths2.push(temp);
+                }
+            }
+            else {
+                Path temp = paths1.front();
+                worker.setPath(temp);
+                paths1.pop();
+                paths1.push(temp);
+            }
+        }
+  }
+
 }
