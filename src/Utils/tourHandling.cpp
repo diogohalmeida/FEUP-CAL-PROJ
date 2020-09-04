@@ -168,9 +168,11 @@ void givePathsToWorkers(vector<Worker> & workers, vector<Path> paths) {
         }
     }
 
+    /*
     cout << "Paths with difficulty 3 size: " << paths3.size() << endl;
     cout << "Paths with difficulty 2 size: " << paths2.size() << endl;
     cout << "Paths with difficulty 1 size: " << paths1.size() << endl;
+     */
 
     //Mudar para iteradores
     for (Worker& worker: workers){
